@@ -1,6 +1,6 @@
 # Welcome to MkDocs
 
-![](../images/sample.jpg)
+![](./images/sample.jpg)
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
