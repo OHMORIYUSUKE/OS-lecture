@@ -6,10 +6,33 @@ repo_name: OHMORIYUSUKE/OS-lecture
 repo_url: https://github.com/OHMORIYUSUKE/OS-lecture
 copyright: © 2022 yusuke-ohmori
 
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+      separator: '[\s\-,:!=\[\]()"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
 theme:
   name: material
   locale: ja
+  favicon: assets/aws_icon.png
+  logo: assets/aws_icon.png
   highlightjs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - search.highlight
+    - search.suggest
   icon:
     admonition:
       note: octicons/tag-16
@@ -51,11 +74,3 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-
-extra:
-  search:
-    language: "en, ja"
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/uutan1108
-      name: uutan1108 on Twitter

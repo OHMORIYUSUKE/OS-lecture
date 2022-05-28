@@ -1,0 +1,12 @@
+version: "3.0"
+
+services:
+  mkdocs:
+    build: .
+    container_name: mkdocs
+    restart: always
+    tty: true
+    volumes:
+      - ./document:/document
+    ports:
+      - 80:8000

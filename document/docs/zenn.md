@@ -63,7 +63,7 @@ Docker を用いて開発しており、バックエンドコンテナの Debian
 
 バックエンドは debian に Python と uwsgi,flask,その他言語をインストールする。
 
-```Dockerfile
+```Dockerfile hl_lines="3 20" title="Dockerfile" linenums="1"
 FROM debian
 
 RUN apt-get update && apt-get install -y -q sudo
