@@ -29,6 +29,9 @@ AWS には多くのサービスがあります。2022 年では**223 個**のサ
 
 <details>
 <summary>(コラム)AWSが使われているところ</summary>
+<br>
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/45b648c670f3468d8099152c800bef42" title="Fate/Grand Orderにおける、ディライトワークス流AWS導入＆活用術(CEDEC 2016編)" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+<br>
 <a href="https://speakerdeck.com/isoparametric/grand-orderniokeru-deiraitowakusuliu-awsdao-ru-huo-yong-shu-cedec-2016bian">Fate/Grand Orderにおける、ディライトワークス流AWS導入＆活用術CEDEC 2016編</a>
 <br>
 様々な業界でAWSが使われています。WEBサービスはもちろん、ゲームの裏側を支えるシステムでAWSが使われています。
