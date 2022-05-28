@@ -1,9 +1,9 @@
 site_name: OS lecture
 site_description: AWSアカデミー(EC2)のチュートリアル
-site_url: https://utan-portfolio.vercel.app/
+site_url: https://ohmoriyusuke.github.io/OS-lecture/
 site_author: yusuke-ohmori
-repo_name: OHMORIYUSUKE/AWS-academy
-repo_url: https://github.com/OHMORIYUSUKE/AWS-academy
+repo_name: OHMORIYUSUKE/OS-lecture
+repo_url: https://github.com/OHMORIYUSUKE/OS-lecture
 copyright: © 2022 yusuke-ohmori
 
 theme:
