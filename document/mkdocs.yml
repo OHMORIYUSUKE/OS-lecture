@@ -15,7 +15,7 @@ plugins:
 
 theme:
   name: material
-  locale: ja
+  language: "ja"
   favicon: assets/aws_icon.png
   logo: assets/aws_icon.png
   highlightjs: true
