@@ -128,3 +128,9 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+# extra:
+#   social:
+#     - icon: fontawesome/brands/twitter
+#       link: https://twitter.com/uutan1108
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/OHMORIYUSUKE
