@@ -1,12 +1,12 @@
-site_name: OS lecture
-site_description: AWSアカデミー(EC2)のチュートリアル
-site_url: https://ohmoriyusuke.github.io/OS-lecture/
+site_name: オペレーティングシステム
+site_description: オペレーティングシステムの資料
+site_url: https://cist-perating-system.netlify.app/
 site_author: yusuke-ohmori
-repo_name: OHMORIYUSUKE/OS-lecture
-repo_url: https://github.com/OHMORIYUSUKE/OS-lecture
+# repo_name: OHMORIYUSUKE/OS-lecture
+# repo_url: https://github.com/OHMORIYUSUKE/OS-lecture
 copyright: © 2022 yusuke-ohmori
 
-edit_uri: blob/main/document/docs/
+# edit_uri: blob/main/document/docs/
 
 nav:
   - "目次": "index.md"
