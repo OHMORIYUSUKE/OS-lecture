@@ -3,7 +3,7 @@
 ## AWS とは
 
 <figure markdown>
-![aws_top_page.png](../assets/images/aws_top_page.png)
+![aws_top_page.png](../../assets/images/aws_top_page.png)
 <figcaption>https://aws.amazon.com/jp/</figcaption>
 </figure>
 

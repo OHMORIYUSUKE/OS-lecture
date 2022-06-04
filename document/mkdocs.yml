@@ -5,17 +5,58 @@ site_author: yusuke-ohmori
 # repo_name: OHMORIYUSUKE/OS-lecture
 # repo_url: https://github.com/OHMORIYUSUKE/OS-lecture
 copyright: © 2022 yusuke-ohmori
-
+license: MTI
 # edit_uri: blob/main/document/docs/
 
 nav:
   - "目次": "index.md"
   - "オペレーティングシステム":
-      - "目標": "aws/index.md"
-      - "AWSとは": "aws/overview.md"
-      - "AWSアカデミー": "aws/aws-academy.md"
-  - "コンピュータネットワーク":
-      - "復習": "computer-network/index.md"
+      - "最終目標": "os/index.md"
+      - "AWS":
+          - "AWSとは": "os/aws/index.md"
+          - "AWSアカデミー": "os/aws/aws-academy.md"
+          - "EC2とは": "os/aws/ec2.md"
+      - "Linux コマンド":
+          - "Linuxとは": "os/linux/index.md"
+          - "CLIとGUI": "os/linux/cli-gui.md"
+          - "CLI実践": "os/linux/cmd-tutorial.md"
+      - "セキュリティ":
+          - "セキュリティとは": "os/security/index.md"
+          - "セキュリティグループとは": "os/security/security-group.md"
+          - "IPアドレス": "os/security/ip.md"
+          - "ポート": "os/security/port.md"
+          - "SSHとは(公開鍵・秘密鍵)": "os/security/ssh.md"
+      - "ミドルウェア":
+          - "ミドルウェアとは": "os/middleware/index.md"
+          - "WEBサーバー": "os/middleware/web-server.md"
+          - "Apach": "os/middleware/apach.md"
+          - "データベース": "os/middleware/database.md"
+          - "MySQL": "os/middleware/mysql.md"
+      - "静的コンテンツ":
+          - "静的コンテンツとは": "os/static-content/index.md"
+          - "HTML, CSS, JavaScritp": "os/static-content/html-css-js.md"
+      - "動的コンテンツ":
+          - "動的コンテンツとは": "os/dynamic-content/index.md"
+          - "PHP": "os/dynamic-content/php.md"
+      - "EC2 チュートリアル":
+          - "構築するもの": "os/ec2-tutorial/index.md"
+          - "AWSコンソール": "os/ec2-tutorial/console.md"
+          - "EC2を起動": "os/ec2-tutorial/ec2-start.md"
+          - "EC2にアクセス": "os/ec2-tutorial/ec2-ssh.md"
+          - "Apachをインストール・起動": "os/ec2-tutorial/apach-start.md"
+          - "HTMLを公開": "os/ec2-tutorial/public-html.md"
+          - "PHPを公開": "os/ec2-tutorial/public-php.md"
+          - "MySQLをインストール・起動": "os/ec2-tutorial/start-mysql.md"
+          - "MySQLを操作(初期設定・テーブルを作成)": "os/ec2-tutorial/operation-mysql.md"
+          - "PHPからデータベースにアクセス": "os/ec2-tutorial/get-db-data.md"
+      - "付録":
+          - "ホーム": "os/appendix/index.md"
+          - "仮想環境(docker)": "os/appendix/docker.md"
+          - "データベース(Redis, PostgreSQL)": "os/appendix/redis.md"
+          - "WEBサーバー(nginx)": "os/appendix/nginx.md"
+          - "アプリケーション(Java, Python)": "os/appendix/java-python.md"
+          - "ログ(Apach)": "os/appendix/apach-log.md"
+  - "ライセンス🔑": "license.md"
 
 plugins:
   - search:
@@ -27,8 +68,8 @@ plugins:
 theme:
   name: material
   language: "ja"
-  favicon: assets/aws_icon.png
-  logo: assets/aws_icon.png
+  # favicon: assets/aws_icon.png
+  # logo: assets/aws_icon.png
   highlightjs: true
   palette:
     - media: "(prefers-color-scheme: light)"

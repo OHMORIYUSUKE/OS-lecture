@@ -1,7 +1,7 @@
 # AWS academy とは
 
 <figure markdown>
-![aws_academy_top.png](../assets/images/aws_academy_top.png)
+![aws_academy_top.png](../../assets/images/aws_academy_top.png)
 <figcaption>https://aws.amazon.com/jp/training/awsacademy/</figcaption>
 </figure>
 
