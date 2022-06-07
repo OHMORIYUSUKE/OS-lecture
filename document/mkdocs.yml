@@ -16,7 +16,7 @@ nav:
           - "AWSとは": "os/aws/index.md"
           - "AWSアカデミー": "os/aws/aws-academy.md"
           - "EC2とは": "os/aws/ec2.md"
-      - "Linux コマンド":
+      - "オペレーティングシステム":
           - "Linuxとは": "os/linux/index.md"
           - "CLIとGUI": "os/linux/cli-gui.md"
           - "CLI実践": "os/linux/cmd-tutorial.md"
@@ -56,7 +56,8 @@ nav:
           - "WEBサーバー(nginx)": "os/appendix/nginx.md"
           - "アプリケーション(Java, Python)": "os/appendix/java-python.md"
           - "ログ(Apach)": "os/appendix/apach-log.md"
-  - "ライセンス🔑": "license.md"
+          - "その他": "os/appendix/others.md"
+  - "ライセンス": "license.md"
 
 plugins:
   - search:
@@ -85,6 +86,9 @@ theme:
   features:
     - search.highlight
     - search.suggest
+    - navigation.top
+    - navigation.tabs
+    - header.autohide
   icon:
     admonition:
       note: octicons/tag-16
