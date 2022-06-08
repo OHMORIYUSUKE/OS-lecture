@@ -19,6 +19,7 @@ nav:
       - "オペレーティングシステム":
           - "Linuxとは": "os/linux/index.md"
           - "CLIとGUI": "os/linux/cli-gui.md"
+          - "パッケージ管理": "os/linux/packages.md"
           - "CLI実践": "os/linux/cmd-tutorial.md"
       - "セキュリティ":
           - "セキュリティとは": "os/security/index.md"
@@ -29,9 +30,7 @@ nav:
       - "ミドルウェア":
           - "ミドルウェアとは": "os/middleware/index.md"
           - "WEBサーバー": "os/middleware/web-server.md"
-          - "Apach": "os/middleware/apach.md"
           - "データベース": "os/middleware/database.md"
-          - "MySQL": "os/middleware/mysql.md"
       - "静的コンテンツ":
           - "静的コンテンツとは": "os/static-content/index.md"
           - "HTML, CSS, JavaScritp": "os/static-content/html-css-js.md"

@@ -26,6 +26,12 @@ Linux はオープンソースであり、無償で利用できるディスト�
     セガ、Windows CEをベースとした新世代ゲーム機「Dreamcast」を発表
     https://pc.watch.impress.co.jp/docs/article/980521/sega.htm
 
-# 参考
+## 参考
+
+詳細はこちらを参照してください。
 
 [Linux ディストリビューション](https://exercises-aws.fml.org/ja/appendix/unix/linux/distro/)
+
+---
+
+[Linux](https://ja.wikipedia.org/wiki/Linux)
