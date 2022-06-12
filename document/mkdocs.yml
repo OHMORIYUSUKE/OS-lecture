@@ -19,8 +19,8 @@ nav:
       - "オペレーティングシステム":
           - "Linuxとは": "os/linux/index.md"
           - "CLIとGUI": "os/linux/cli-gui.md"
-          - "パッケージ管理": "os/linux/packages.md"
           - "CLI実践": "os/linux/cmd-tutorial.md"
+          - "パッケージ管理": "os/linux/packages.md"
       - "セキュリティ":
           - "セキュリティとは": "os/security/index.md"
           - "セキュリティグループとは": "os/security/security-group.md"
@@ -131,6 +131,13 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css
+
+extra_javascript:
+  - https://code.jquery.com/jquery-1.12.4.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js
 # extra:
 #   social:
 #     - icon: fontawesome/brands/twitter
