@@ -1,5 +1,7 @@
 # Apach
 
+## Apach をインストール
+
 ```sh
 ubuntu@ip-172-31-85-199:~$ sudo apt install apache2
 Reading package lists... Done
@@ -44,15 +46,69 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ```
 
+`apt`コマンドを用いて Apach をインストールする。
+
+## 動作確認
+
+!!! note
+
+    **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
+
 ![](../../assets/images/Apach_defoulte.png)
 
+ブラウザに上記のような画面が出ていることが確認できます。
+
+## ソフトウェアの制御
+
+### 停止
+
 ```sh
-sudo systemctl stop apache2
-sudo systemctl start apache2
-sudo systemctl restart apache2
-sudo systemctl reload apache2
-# デフォルトでは、Apacheはサーバーの起動時に自動的に起動するように設定されています。これを望まない場合は、次のように入力してこの動作を無効にできます。
-sudo systemctl disable apache2
-# ブート時に起動するサービスを再度有効にするには、次を入力します。
-sudo systemctl enable apache2
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl stop apache2
 ```
+
+Apach を停止する。
+
+### 起動
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl start apache2
+```
+
+Apach を起動する。
+
+### 再起動
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl restart apache2
+```
+
+Apach を再起動する。
+
+### 設定を読み込み
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl reload apache2
+```
+
+Apach の設定の変更を反映する。
+
+### サーバー起動時に起動を無効
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl disable apache2
+```
+
+デフォルトでは、Apache はサーバーの起動時に自動的に起動するように設定されています。これを望まない場合は、次のように入力してこの動作を無効にできます。
+
+### サーバー起動時に起動
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl enable apache2
+```
+
+`sudo systemctl disable apache2`を無効化します。
+
+!!! note
+
+    ブラウザにIPアドレスを入力しても画面が表示されない場合は、Apachが起動していないことが考えられます。
+    Apachを起動しましょう。
