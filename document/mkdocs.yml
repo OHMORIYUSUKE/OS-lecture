@@ -46,7 +46,8 @@ nav:
           - "HTMLを公開": "os/ec2-tutorial/public-html.md"
           - "PHPを公開": "os/ec2-tutorial/public-php.md"
           - "MySQLをインストール・起動": "os/ec2-tutorial/start-mysql.md"
-          - "MySQLを操作(初期設定・テーブルを作成)": "os/ec2-tutorial/operation-mysql.md"
+          - "MySQLを操作(初期設定)": "os/ec2-tutorial/operation-init-mysql.md"
+          - "MySQLを操作(データベース・テーブル)": "os/ec2-tutorial/operation-table-mysql.md"
           - "PHPからデータベースにアクセス": "os/ec2-tutorial/get-db-data.md"
       - "付録":
           - "ホーム": "os/appendix/index.md"
