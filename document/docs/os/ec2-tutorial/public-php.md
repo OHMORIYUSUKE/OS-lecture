@@ -67,6 +67,8 @@ phpinfo();
 ?>
 ```
 
+[vi の使い方](../ec2-tutorial/public-html.md)
+
 `index.php`には上記のように書いてみましょう。
 
 !!! note
@@ -83,5 +85,29 @@ phpinfo();
 ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/index.php)
 
 ![](../../assets/images/php_info.png)
+
+上記のように表示されます。正しく PHP のプログラムが動作していることが確認できます。
+
+## `Hello World`
+
+`/var/www/html`に`index.php`を編集してください。
+
+```php title="index.php"
+<?PHP
+print("Hello World !");
+?>
+```
+
+[vi の使い方](../ec2-tutorial/public-html.md)
+
+`index.php`には上記のように書いてみましょう。
+
+!!! note
+
+    **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
+
+ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/index.php)
+
+![](../../assets/images/html_hello.png)
 
 上記のように表示されます。正しく PHP のプログラムが動作していることが確認できます。

@@ -7,34 +7,20 @@
 - Apach をインストール、起動
 - ブラウザから Apach の起動を確認
 
-<figure markdown>
-  ![Image title](https://dummyimage.com/600x400/)
-  <figcaption>Image caption</figcaption>
-</figure>
+![](../../assets/images/Apach_defoulte.png)
 
 ## ステップ 2
 
 Apach 上の PHP で`Hello World`を出力する
 
-<figure markdown>
-  ![Image title](https://dummyimage.com/600x400/)
-  <figcaption>Image caption</figcaption>
-</figure>
+![](../../assets/images/html_hello.png)
 
 ## ステップ 3
 
 MySQL を起動
 
-<figure markdown>
-  ![Image title](https://dummyimage.com/600x400/)
-  <figcaption>Image caption</figcaption>
-</figure>
+![](../../assets/images/mysql_login.png)
 
 ## ステップ 4
 
 PHP から MySQL に接続、ブラウザから MySQL の内容が表示されていることを確認
-
-<figure markdown>
-  ![Image title](https://dummyimage.com/600x400/)
-  <figcaption>Image caption</figcaption>
-</figure>
