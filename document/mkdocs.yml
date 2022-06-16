@@ -23,7 +23,6 @@ nav:
           - "パッケージ管理": "os/linux/packages.md"
       - "セキュリティ":
           - "セキュリティとは": "os/security/index.md"
-          - "セキュリティグループとは": "os/security/security-group.md"
           - "IPアドレス": "os/security/ip.md"
           - "ポート": "os/security/port.md"
           - "SSHとは(公開鍵・秘密鍵)": "os/security/ssh.md"
