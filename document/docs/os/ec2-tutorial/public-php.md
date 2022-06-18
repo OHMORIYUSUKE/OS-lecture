@@ -88,6 +88,11 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 
 上記のように表示されます。正しく PHP のプログラムが動作していることが確認できます。
 
+!!! note
+
+    上の画像のような画面が出ない場合は、ログを確認しましょう。エラーの原因が分かるかもしれません。
+    [ログを確認](../appendix/apach-log.md)
+
 ## `Hello World`
 
 `/var/www/html`に`index.php`を編集してください。
@@ -111,3 +116,8 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 ![](../../assets/images/html_hello.png)
 
 上記のように表示されます。正しく PHP のプログラムが動作していることが確認できます。
+
+!!! note
+
+    viで書き換えるのが大変だと感じてくると思います。ここで、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
+    [vscode で開発(付録)](../appendix/remote-ssh.md)

@@ -146,6 +146,15 @@ ubuntu@ip-172-31-85-199:~$ ls
 `-r`のオプションでディレクトリを削除できます。
 `-f`のオプションでファイルを削除することができます。
 
+### chmod
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo chmod 666 index.html
+```
+
+ファイルの権限を変更するコマンドです。Linux 特有のコマンドです。
+詳細は[こちら](../security/permission.md)で解説しています。
+
 ## 補足
 
 ```sh

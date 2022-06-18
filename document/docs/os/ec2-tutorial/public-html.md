@@ -54,6 +54,11 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo rm -f index.html && sudo touch index
 
 #### `index.html`に書き込む
 
+!!! note
+
+    viを使わずに編集したい方はこちらの方法でも編集できます。ここでは、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
+    [vscode で開発(付録)](../appendix/remote-ssh.md)
+
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo vi index.html
 ```

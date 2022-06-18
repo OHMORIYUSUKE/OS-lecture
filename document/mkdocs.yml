@@ -9,7 +9,8 @@ license: MTI
 # edit_uri: blob/main/document/docs/
 
 nav:
-  - "目次": "index.md"
+  - "始める前に": "index.md"
+  - "目次": "contents.md"
   - "オペレーティングシステム":
       - "最終目標": "os/index.md"
       - "AWS":
@@ -26,6 +27,7 @@ nav:
           - "IPアドレス": "os/security/ip.md"
           - "ポート": "os/security/port.md"
           - "SSHとは(公開鍵・秘密鍵)": "os/security/ssh.md"
+          - "パーミッション": "os/security/permission.md"
       - "ミドルウェア":
           - "ミドルウェアとは": "os/middleware/index.md"
           - "WEBサーバー": "os/middleware/web-server.md"
@@ -51,11 +53,8 @@ nav:
       - "付録":
           - "ホーム": "os/appendix/index.md"
           - "仮想環境(docker)": "os/appendix/docker.md"
-          - "データベース(Redis, PostgreSQL)": "os/appendix/redis.md"
-          - "WEBサーバー(nginx)": "os/appendix/nginx.md"
-          - "アプリケーション(Java, Python)": "os/appendix/java-python.md"
           - "ログ(Apach)": "os/appendix/apach-log.md"
-          - "その他": "os/appendix/others.md"
+          - "vscodeで開発": "os/appendix/remote-ssh.md"
   - "ライセンス": "license.md"
 
 plugins:
