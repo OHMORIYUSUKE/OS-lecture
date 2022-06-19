@@ -149,7 +149,7 @@ For more examples and ideas, visit:
       「ubuntu/apache2」のDockerイメージを用いてApachを起動します。
       https://hub.docker.com/r/ubuntu/apache2
 
-Docker hub のページの**Usage**のコマンドそのままです。
+> Docker hub のページの**Usage**のコマンドそのままです。
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker run -d --name apache2-container -e TZ=UTC -p 80:80 ubuntu/apache2:2.4-22.04_beta
@@ -174,39 +174,17 @@ ed3d84c36c5ed599338dde2540db8329b721e40ee2a03bdb2c95ac6975cfa61e
 5. `-p 80:80`: ポートについての設定(`:`の前の`80`はホスト OS 側のポート、`:`の後の`80`はコンテナ内のポート)
 6. `ubuntu/apache2:2.4-22.04_beta`: Docker イメージを指定(今回は Docker hub で公開されているイメージを指定)
 
+### 動作確認
+
+!!! note
+
+    **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
+
 ![](../../assets/images/apach2_docker.png)
 
-## Docker コンテナを確認
+上記のような画面が表示されます。Apach2 が動作していることが確認できます。
 
-```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker ps
-CONTAINER ID   IMAGE                           COMMAND                CREATED              STATUS
-PORTS                               NAMES
-c26c80a7ef70   ubuntu/apache2:2.4-22.04_beta   "apache2-foreground"   About a minute ago   Up About a minute
-0.0.0.0:80->80/tcp, :::80->80/tcp   apache2-container
-```
-
-起動しているコンテナを確認する。
-
-## コンテナを停止
-
-```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker container stop 5101aed26dfd
-5101aed26dfd
-```
-
-`docker ps`で確認したコンテナの`CONTAINER ID`を指定してコンテナを停止。
-
-## コンテナを削除
-
-```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker container rm 5101aed26dfd
-5101aed26dfd
-```
-
-`docker ps`で確認したコンテナの`CONTAINER ID`を指定してコンテナを削除。
-
-## 自分のソースコード(HTML)を表示させる
+### 自分のソースコード(HTML)を表示させる
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker run -d --name apache2-container -e TZ=UTC -p 80:80 -v "$PWD":/var/www/html/ ubuntu/apache2:2.4-22.04_beta
@@ -228,7 +206,42 @@ ubuntu@ip-172-31-85-199:/var/www/html$ cat index.html
 
 ![](../../assets/images/apach2_helloworld_docker.png)
 
-## image
+上記のような画面に変化することが確認できます。
+ファイルの変更が即座にコンテナに反映されます。
+
+## Docker の基本操作
+
+### コンテナを確認
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker ps
+CONTAINER ID   IMAGE                           COMMAND                CREATED              STATUS
+PORTS                               NAMES
+c26c80a7ef70   ubuntu/apache2:2.4-22.04_beta   "apache2-foreground"   About a minute ago   Up About a minute
+0.0.0.0:80->80/tcp, :::80->80/tcp   apache2-container
+```
+
+起動しているコンテナを確認するコマンドです。
+
+### コンテナを停止
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker container stop 5101aed26dfd
+5101aed26dfd
+```
+
+`docker ps`で確認したコンテナの`CONTAINER ID`を指定してコンテナを停止できます。
+
+### コンテナを削除
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker container rm 5101aed26dfd
+5101aed26dfd
+```
+
+`docker ps`で確認したコンテナの`CONTAINER ID`を指定してコンテナを削除できます。
+
+### image を確認
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker images
@@ -242,9 +255,11 @@ Deleted: sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412
 Deleted: sha256:e07ee1baac5fae6a26f30cabfe54a36d3402f96afda318fe0a96cec4ca393359
 ```
 
+EC2 に存在する Docker イメージを一覧で確認するコマンドです。
+
 ## エラー
 
-sudo つけ忘れ
+### sudo つけ忘れ
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ docker container stop c26c80a7ef70
@@ -252,7 +267,14 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/c26c80a7ef70/stop": dial unix /var/run/docker.sock: connect: permission denied
 ```
 
-ポート被り
+`sudo`をつけ忘れるとエラーになります。
+
+Docker コマンドは root ユーザーのみが実行可能です。
+
+> **解決策** 　
+> `sudo`をつけましょう
+
+### ポート被り
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker run -d --name apache2-container2 -e TZ=UTC -p 80:80 -v "$PWD":/var/www/html/ ubuntu/apache2:2.4-22.04_beta
@@ -260,7 +282,13 @@ d188d468786a0d69d6db3ed73172c21341dcff1da28b8cf22f39fa411ae9321e
 docker: Error response from daemon: driver failed programming external connectivity on endpoint apache2-container2 (04e52919727a2438fd6495394991ecffb16bb7c837ac987d5bb10b8a00ab4c6d): Bind for 0.0.0.0:80 failed: port is already allocated.
 ```
 
-コンテナ名の重複
+ほかのコンテナやミドルウェアで`80`番ポートをすでに使用している場合にエラーになります。
+
+> **解決策**
+> 同じポート番号を使わないようにしましょう。
+> コンテナのポート番号を変更、または、すでに起動済みのミドルウェア、コンテナを停止させましょう。
+
+### コンテナ名の重複
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo docker run -d --name apache2-container2 -e TZ=UTC -p 80:80 -v "$PWD":/var/www/html/ ubuntu/apache2:2.4-22.04_beta
@@ -268,6 +296,11 @@ docker: Error response from daemon: Conflict. The container name "/apache2-conta
 container to be able to reuse that name.
 See 'docker run --help'.
 ```
+
+すでに同一の名前のコンテナが存在している場合にエラーになります。
+
+> **解決策**
+> コンテナ名を変更しましょう
 
 ## 参考
 
