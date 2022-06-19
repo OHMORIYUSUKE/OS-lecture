@@ -19,15 +19,27 @@
 
 サイドバーの`リモートエクスプローラー`をクリック
 `SSHターゲット`の右にある`歯車`をクリック
-`C:\Users\hoge\.ssh\config`を選択
+`C:\Users\123456\.ssh\config`を選択
 
-```config title="C:\Users\hoge\ .ssh\config"
+```config title="C:\Users\123456\ .ssh\config"
 Host ec2
   Hostname 34.201.38.2
   User ubuntu
   Port 22
   IdentityFile C:\Users\123456\Documents\labsuser.pem
 ```
+
+上記のように入力する。
+
+- `Hostname`には、EC2 の IP アドレス
+- `User`には、ubuntu を指定
+- `Port`には、22 を指定
+- `IdentityFile`を指定
+
+!!! note
+
+    SSH接続するための情報を記載するためのファイルである。
+    `C:\Users\hoge\ .ssh\config`に設定することでSSHする際に参照される。
 
 ![](../../assets/images/remote_ssh_install3.png)
 
