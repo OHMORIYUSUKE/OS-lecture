@@ -105,6 +105,19 @@ Query OK, 0 rows affected (0.01 sec)
 mysql>
 ```
 
+### 結果
+
+```sh
+mysql>  SHOW GRANTS FOR 'webapp'@'localhost';
++------------------------------------------------------------------------------------+
+| Grants for webapp@localhost                                                        |
++------------------------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO `webapp`@`localhost`                                         |
+| GRANT SELECT, INSERT, UPDATE, DELETE ON `webapp`.`product` TO `webapp`@`localhost` |
++------------------------------------------------------------------------------------+
+2 rows in set (0.01 sec)
+```
+
 ### 権限を取り消す
 
 ```sh
