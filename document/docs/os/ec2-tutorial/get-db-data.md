@@ -1,5 +1,9 @@
 # データベースからデータを取得
 
+## 必要なものをインストール
+
+### `php-pdo`
+
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo apt install php-pdo
 Reading package lists... Done
@@ -10,6 +14,8 @@ php8.1-common is already the newest version (8.1.2-1ubuntu2.1).
 php8.1-common set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
 ```
+
+### `php-mysql`
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo apt install php-mysql
@@ -49,58 +55,108 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ```
 
-### コード
+これで PHP からデータベース(MySQL)にアクセスできるようになりました。
+
+### PHP のプログラム
+
+PHP からデータベースにアクセスし、**データの作成**、**データの削除**、**データの取得**を行います。
+
+!!! note
+
+    データベース(RDB リレーショナルデータベース)で、**データの作成**、**データの削除**、**データの取得**、**データの更新**を行うことを、
+    データの作成（Create）、読み出し（Read）、更新（Update）、削除（Delete）の頭文字をとって**CRUD**と言われている。
+
+以下のコードを`/var/www/index.php`に上書きしてください。
 
 ```php
-<html>
+<?php
+
+$dsn = 'mysql:dbname=webapp;host=localhost';
+$user = 'webapp';
+$password = 'qazWSX123$';
+
+try {
+    $dbh = new PDO($dsn, $user, $password);
+} catch (PDOException $e) {
+    print('Error:' . $e->getMessage());
+    die();
+}
+
+// POST
+if ($_POST['method'] == 'post') {
+    $stmt = $dbh->prepare("INSERT INTO product (name, price) VALUES (:name, :price)");
+    $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
+    $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
+    $res = $stmt->execute();
+
+    header('Location: index.php');
+}
+
+// DELETE
+if ($_POST['method'] == 'delete') {
+    $stmt = $dbh->prepare("DELETE FROM product WHERE name = :name AND price=:price");
+    $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
+    $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
+    $res = $stmt->execute();
+
+    header('Location: index.php');
+}
+
+
+?>
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
-    <title>売店サイト</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>売店 | 管理画面</title>
 </head>
 
 <body>
 
     <form method="post" action="index.php">
-    商品名
-    <input type="text" name="name" size="15" >
-    価格(円)
-    <input type="number" name="price" >
-    <input type="submit" value="送信">
+        <input name="method" type="hidden" value="post">
+        商品名
+        <input type="text" name="name" size="15">
+        価格(円)
+        <input type="number" name="price">
+        <input type="submit" value="送信">
     </form>
 
     <?php
-
-    $dsn = 'mysql:dbname=webapp;host=localhost';
-    $user = 'webapp';
-    $password = 'qazWSX123$';
-
-    try {
-        $dbh = new PDO($dsn, $user, $password);
-
-        if($_POST['name'] != ''){
-            $stmt = $dbh->prepare("INSERT INTO product (name, price) VALUES (:name, :price)");
-            $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
-            $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
-            $res = $stmt->execute();
-        }
-
-        $sql = 'select * from product';
-
-        print('商品名  価格(円)<br>');
-
-        foreach ($dbh->query($sql) as $row) {
-            print($row['name'] . ' ' . $row['price'] . '円<br>');
-        }
-    } catch (PDOException $e) {
-        print('Error:' . $e->getMessage());
-        die();
+    // GET
+    $sql = 'select * from product';
+    print('<p>商品名  価格(円)</p>');
+    foreach ($dbh->query($sql) as $row) {
+    ?>
+        <form method="post" action="index.php">
+            <?php print($row['name'] . ' ' . $row['price'] . '円   '); ?>
+            <input name="method" type="hidden" value="delete">
+            <input name="name" type="hidden" value="<?php print($row['name']); ?>">
+            <input name="price" type="hidden" value="<?php print($row['price']); ?>">
+            <input type="submit" value="削除">
+        </form>
+    <?php
     }
-
-    $dbh = null;
-
     ?>
 
 </body>
 
 </html>
 ```
+
+以下のような画面になると思います。
+
+![](../../assets/images/get_db_item_php.png)
+
+!!! note
+
+    エラーが出た場合は、[ログ](../appendix/apach-log.md)を見てください。
+
+これで、Apach、MySQL、PHP の設定が完了しました。
+
+### 以上でチュートリアルは終了です。
+
+[このコードの解説はこちらです](./php-tutorial.md)

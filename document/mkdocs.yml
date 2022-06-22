@@ -50,6 +50,7 @@ nav:
           - "MySQLを操作(初期設定)": "os/ec2-tutorial/operation-init-mysql.md"
           - "MySQLを操作(データベース・テーブル)": "os/ec2-tutorial/operation-table-mysql.md"
           - "PHPからデータベースにアクセス": "os/ec2-tutorial/get-db-data.md"
+          - "PHPのコードについて": "os/ec2-tutorial/php-tutorial.md"
       - "付録":
           - "ホーム": "os/appendix/index.md"
           - "仮想環境(docker)": "os/appendix/docker.md"
