@@ -24,3 +24,5 @@ MySQL を起動
 ## ステップ 4
 
 PHP から MySQL に接続、ブラウザから MySQL の内容が表示されていることを確認
+
+![](../../assets/images/get_db_item_php.png)
