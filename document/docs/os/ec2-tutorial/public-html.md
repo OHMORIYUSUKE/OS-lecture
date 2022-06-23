@@ -65,10 +65,6 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo vi index.html
 
 `root`ユーザーで`index.html`を編集する。(`vi`を使う。(ほかのエディタを使ってもよい))
 
-!!! note
-
-    SSH先のサーバーのため、GUIを使うことができない。そのため、IDEなどは使用できない。
-
 #### vi の使い方
 
 黒い画面が出たら、
