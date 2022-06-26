@@ -1,5 +1,40 @@
 # Apach
 
+## APT
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ sudo apt update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease [109 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease [99.8 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:5 https://download.docker.com/linux/ubuntu jammy InRelease [48.9 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [323 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [78.1 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [5552 B]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [194 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [29.5 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [131 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [46.6 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [2680 B]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [6552 B]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [8064 B]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [236 B]
+Get:17 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [191 kB]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [45.9 kB]
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [3108 B]
+Get:20 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [78.1 kB]
+Get:21 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [27.7 kB]
+Get:22 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [1668 B]
+Fetched 1541 kB in 1s (2185 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+25 packages can be upgraded. Run 'apt list --upgradable' to see them.
+```
+
+`sudo apt update`により、`apt install`でインストールされるソフトウェアが最新のものになるようにします。
+
 ## Apach をインストール
 
 ```sh

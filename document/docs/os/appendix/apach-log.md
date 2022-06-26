@@ -2,7 +2,7 @@
 
 ## Apach
 
-`/var/log/apache2`の中の`access.log`に出力されます。
+`/var/log/apache2`の中の`error.log`に出力されます。
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ cat /var/log/apache2/error.log
