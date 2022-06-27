@@ -110,8 +110,7 @@ All done!
 ## MySQL に入る
 
 ```sh
-ubuntu@ip-172-31-85-199:/etc$ mysql -u root -p
-Enter password:
+ubuntu@ip-172-31-85-199:/etc$ mysql -uroot -pqaz123WSX$
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 12
 Server version: 8.0.29-0ubuntu0.22.04.2 (Ubuntu)
@@ -127,9 +126,11 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-`mysql -u root -p`を入力する。
+`mysql -u root -p{password}`を入力する。
 
-先ほど、MySQL の root ユーザーに設定したパスワード(qaz123WSX$)を入力し、MySQL に入る。
+先ほど、MySQL の root ユーザーに設定したパスワード(qaz123WSX$)を引数で渡し、MySQL に入る。
+
+> 資料と同じパスワードの人は、`mysql -uroot -pqaz123WSX$`で入ることができます。
 
 ### 初期設定を確認
 
