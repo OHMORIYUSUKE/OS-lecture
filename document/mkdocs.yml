@@ -55,6 +55,7 @@ nav:
           - "ホーム": "os/appendix/index.md"
           - "Python(CGI)": "os/appendix/python.md"
           - "Perl(CGI)": "os/appendix/perl.md"
+          - "MySQLテクニック": "os/appendix/mysql.md"
           - "仮想環境(docker)": "os/appendix/docker.md"
           - "ログ(Apach)": "os/appendix/apach-log.md"
           - "vscodeで開発": "os/appendix/remote-ssh.md"

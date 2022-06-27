@@ -210,3 +210,9 @@ Query OK, 0 rows affected (0.00 sec)
 
 `REVOKE DELETE, INSERT, SELECT, UPDATE ON webapp.product FROM 'webapp'@'localhost';`
 `'webapp'@'localhost'`から`webapp`データベースの`product`テーブルの`DELETE`(カラムの削除), `INSERT`(データの追加), `SELECT`(データの取得), `UPDATE`(データの更新)の権限を取り消す設定を行います。
+
+## 参考
+
+SQL を簡単に実行する方法を解説しています。`.sql`ファイルから SQL を実行します。
+
+[MySQL テクニック](../appendix/mysql.md)
