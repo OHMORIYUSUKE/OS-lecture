@@ -1,6 +1,11 @@
 # AWS-academy
 
-## 参考
+## 資料の内容
+
+EC2 を用いて簡単な WEB アプリケーションを公開するために必要なことを解説しています。
+ハンズオンでは、EC2 で Apach, MySQL を起動し、PHP から MySQL のデータの操作を行います。EC2 を起動・設定、EC2 に接続から解説しています。
+
+## 本資料の参考資料
 
 クラウド演習 AWS 編
 〜AWS Academy の概要〜
@@ -13,17 +18,10 @@ https://exercises-aws.fml.org/ja/
 
 ---
 
-メモ
+## ローカルで閲覧
 
-mkdoc 記法
+Docker を用いて閲覧することが可能です。
 
-```py title="bubble_sort.py"
-
-print(11)
-print(11)
-print(11)
-print(11)
-
+```sh
+$ docker compose up
 ```
-
-++ctrl+alt+delete++
