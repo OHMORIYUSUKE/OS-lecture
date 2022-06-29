@@ -1,4 +1,7 @@
-# AWS-academy
+# OS-lecture
+
+[![ci](https://github.com/OHMORIYUSUKE/OS-lecture/actions/workflows/ci.yml/badge.svg)](https://github.com/OHMORIYUSUKE/OS-lecture/actions/workflows/ci.yml)
+[![pages-build-deployment](https://github.com/OHMORIYUSUKE/OS-lecture/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/OHMORIYUSUKE/OS-lecture/actions/workflows/pages/pages-build-deployment)
 
 ## 資料の内容
 
