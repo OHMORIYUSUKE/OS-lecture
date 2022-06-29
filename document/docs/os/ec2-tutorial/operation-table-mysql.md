@@ -15,6 +15,8 @@ mysql>
 パスワードを`qazWSX123$`
 で作成します。
 
+> パスワードは自由に決めても大丈夫です。
+
 !!! note
 
     これ以降は、MySQLのwebappユーザーのパスワードは`qazWSX123$`と表記します。
@@ -145,6 +147,11 @@ mysql>
 3 rows in set (0.00 sec)
 ```
 
+!!! note
+
+    簡単にSQLを実行する方法も解説しています。
+    [MySQLテクニック](../appendix/mysql.md)
+
 ## webapp ユーザーの権限
 
 ```sh
@@ -197,6 +204,10 @@ mysql>  SHOW GRANTS FOR 'webapp'@'localhost';
 
 権限が付与されたことが確認できます。
 
+!!! note
+
+    これで、アプリケーションから攻撃を受けたとしても他のデータベースにアクセスされる可能性や、データベースを消去されるリスクを下げることができました、
+
 ---
 
 ここはやらなくていいです。
@@ -210,6 +221,10 @@ Query OK, 0 rows affected (0.00 sec)
 
 `REVOKE DELETE, INSERT, SELECT, UPDATE ON webapp.product FROM 'webapp'@'localhost';`
 `'webapp'@'localhost'`から`webapp`データベースの`product`テーブルの`DELETE`(カラムの削除), `INSERT`(データの追加), `SELECT`(データの取得), `UPDATE`(データの更新)の権限を取り消す設定を行います。
+
+!!! note
+
+    誤った設定を行ってしまった際などに参考にしてください。
 
 ## 参考
 

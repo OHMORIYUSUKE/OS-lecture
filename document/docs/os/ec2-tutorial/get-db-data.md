@@ -57,9 +57,19 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 これで PHP からデータベース(MySQL)にアクセスできるようになりました。
 
+!!! note
+
+    パッケージ管理について解説しています。
+    [APT コマンドについて](../linux/packages.md)
+
 ### PHP のプログラム
 
 PHP からデータベースにアクセスし、**データの作成**、**データの削除**、**データの取得**を行います。
+
+!!! note
+
+    MySQLについて解説しています。
+    [MySQLについて](../middleware/database.md)
 
 !!! note
 

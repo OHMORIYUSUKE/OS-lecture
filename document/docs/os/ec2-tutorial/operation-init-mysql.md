@@ -2,12 +2,17 @@
 
 MySQL の初期設定は安全ではない設定があるので、変更していきます。
 
+!!! note
+
+    MySQLについて解説しています。
+    [MySQLについて](../middleware/database.md)
+
 ## root ユーザーのパスワードの変更
 
 初期設定では、root ユーザーにパスワードが設定されていません。root ユーザーにパスワードを設定していきます。
 
 ```sh
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '{password}';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '{password}';
 ```
 
 上記のコマンドの`{password}`を好きなパスワードに変更してください。
@@ -126,9 +131,11 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-`mysql -u root -p{password}`を入力する。
+`mysql -uroot -p{password}`を入力する。
 
 先ほど、MySQL の root ユーザーに設定したパスワード(qaz123WSX$)を引数で渡し、MySQL に入る。
+
+`-u`はユーザー名を示しており、`-p`はユーザーのパスワードを示しています。
 
 > 資料と同じパスワードの人は、`mysql -uroot -pqaz123WSX$`で入ることができます。
 

@@ -35,6 +35,11 @@ Reading state information... Done
 
 `sudo apt update`により、`apt install`でインストールされるソフトウェアが最新のものになるようにします。
 
+!!! note
+
+    パッケージ管理について解説しています。
+    [APT コマンドについて](../linux/packages.md)
+
 ## Apach をインストール
 
 ```sh
@@ -83,6 +88,11 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 `apt`コマンドを用いて Apach をインストールする。
 
+!!! note
+
+    WEBサーバーについて解説しています。
+    [Apachについて](../middleware/web-server.md)
+
 ## 動作確認
 
 !!! note
@@ -94,6 +104,8 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ブラウザに上記のような画面が出ていることが確認できます。
 
 ## ソフトウェアの制御
+
+ソフトウェアの基本的な操作(起動、停止など)を解説します。
 
 ### 停止
 
@@ -134,6 +146,10 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl disable apache2
 ```
 
 デフォルトでは、Apache はサーバーの起動時に自動的に起動するように設定されています。これを望まない場合は、次のように入力してこの動作を無効にできます。
+
+!!! note
+
+    MySQLも初期設定では、コンピュータ起動時に自動で起動するようになっています。
 
 ### サーバー起動時に起動
 

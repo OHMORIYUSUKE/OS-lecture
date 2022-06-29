@@ -40,8 +40,8 @@ nav:
           - "PHP": "os/dynamic-content/php.md"
       - "EC2 チュートリアル":
           - "構築するもの": "os/ec2-tutorial/index.md"
+          - "AWSを起動": "os/ec2-tutorial/ec2-start.md"
           - "AWSコンソール": "os/ec2-tutorial/console.md"
-          - "EC2を起動": "os/ec2-tutorial/ec2-start.md"
           - "EC2にアクセス": "os/ec2-tutorial/ec2-ssh.md"
           - "Apachをインストール・起動": "os/ec2-tutorial/apach-start.md"
           - "HTMLを公開": "os/ec2-tutorial/public-html.md"
@@ -56,6 +56,7 @@ nav:
           - "Python(CGI)": "os/appendix/python.md"
           - "Perl(CGI)": "os/appendix/perl.md"
           - "MySQLテクニック": "os/appendix/mysql.md"
+          - "SSH設定": "os/appendix/ssh-config.md"
           - "仮想環境(docker)": "os/appendix/docker.md"
           - "ログ(Apach)": "os/appendix/apach-log.md"
           - "vscodeで開発": "os/appendix/remote-ssh.md"

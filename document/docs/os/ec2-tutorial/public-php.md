@@ -42,6 +42,11 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 `apt`コマンドを用いて PHP をインストールする。
 
+!!! note
+
+    パッケージ管理について解説しています。
+    [APT コマンドについて](../linux/packages.md)
+
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ php --version
 PHP 8.1.2 (cli) (built: Apr  7 2022 17:46:26) (NTS)
@@ -92,6 +97,11 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 
     上の画像のような画面が出ない場合は、ログを確認しましょう。エラーの原因が分かるかもしれません。
     [ログを確認](../appendix/apach-log.md)
+
+!!! note
+
+    もし正常に動作しない場合は、Apachを再起動してください。
+    [apachの操作方法](./apach-start.md)
 
 ## `Hello World`
 

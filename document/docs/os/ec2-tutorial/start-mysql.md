@@ -77,6 +77,11 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 `apt`コマンドで`mysql-server`をインストールします。
 
+!!! note
+
+    パッケージ管理について解説しています。
+    [APT コマンドについて](../linux/packages.md)
+
 ### 確認
 
 ```sh
@@ -106,6 +111,8 @@ mysql>
 ```
 
 MySQL に接続されていることが確認できます。`mysql>`に SQL を入力してテーブル作成などを行います。
+
+ここに、SQL を入力することで、データベースを操作することができます。
 
 ### テーブルを確認
 
@@ -147,7 +154,7 @@ mysql> select current_user(), user();
 
     ちなみに、
     ```sh
-    ubuntu@ip-172-31-85-199:/var/log/mysql$ sudo mysql -u root -p
+    ubuntu@ip-172-31-85-199:/var/log/mysql$ sudo mysql -uroot -p
     Enter password:
     ```
     と実行すると`root`ユーザーでmysqlに入ることができます。
