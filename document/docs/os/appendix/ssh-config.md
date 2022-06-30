@@ -8,8 +8,6 @@
     毎回、上記のようなコマンドを入力することで、SSH接続していました。
     しかし、`~/.ssh/config`を書くことで、`ssh ec2`のようなコマンドでSSH接続できます。
 
-https://qiita.com/digdagdag/items/9e5c061e7d86e0af9a57
-
 ## Windows の設定
 
 `c:\Users\{ユーザー名}\.ssh`に設定ファイル(`config`)を書きます。また、`labsuser.pem`もここに配置すると便利です。
