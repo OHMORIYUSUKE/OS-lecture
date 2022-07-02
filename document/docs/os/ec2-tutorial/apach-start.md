@@ -35,7 +35,7 @@ Reading state information... Done
 
 `sudo apt update`により、`apt install`でインストールされるソフトウェアが最新のものになるようにします。
 
-!!! note
+!!! Question
 
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
@@ -88,7 +88,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 `apt`コマンドを用いて Apach をインストールする。
 
-!!! note
+!!! Question
 
     WEBサーバーについて解説しています。
     [Apachについて](../middleware/web-server.md)
@@ -99,7 +99,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
     **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
 
-!!! note
+!!! Question
 
     IPアドレスについて解説しています。
     [IPアドレスについて](../security/ip.md)
@@ -112,7 +112,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 ソフトウェアの基本的な操作(起動、停止など)を解説します。
 
-!!! note
+!!! Question
 
     コマンド操作について解説しています。
     [コマンド操作について](../linux/cmd-tutorial.md)
@@ -169,7 +169,7 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl enable apache2
 
 `sudo systemctl disable apache2`を無効化します。
 
-!!! note
+!!! warning
 
     ブラウザにIPアドレスを入力しても画面が表示されない場合は、Apachが起動していないことが考えられます。
     Apachを起動しましょう。

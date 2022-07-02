@@ -4,7 +4,7 @@
 
 オープンソースの SQL リレーショナルデータベース管理システムです。
 
-!!! note
+!!! Question
 
     データベースについて解説しています。
     [データベースとは](../middleware/database.md)
@@ -84,7 +84,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 `apt`コマンドで`mysql-server`をインストールします。
 
-!!! note
+!!! Question
 
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
@@ -98,7 +98,7 @@ mysql  Ver 8.0.29-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu))
 
 MySQL がインストールされていることが確認できます。
 
-!!! note
+!!! Question
 
     コマンドについて解説しています。
     [コマンドについて](../linux/cmd-tutorial.md)
@@ -179,7 +179,7 @@ mysql> select current_user(), user();
     `-p`:`root`ユーザーのパスワードを指定(インストール直後は空)
     (`Enter password:`も入力せずにエンターを入力)
 
-!!! warning
+!!! Danger
 
     MySQLをrootでアプリケーションから操作することは危険です。ユーザーを作成して、操作しましょう。
     SQLインジェクションなどで被害にあう可能性が高まります。

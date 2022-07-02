@@ -19,12 +19,12 @@ ssh -i labsuser.pem ubuntu@12.34.567.890
 `ubuntu`は SSH する際のユーザー名を指定する。
 `12.34.567.890`は IP アドレスである。自身の EC2 の IP アドレスに書き換えて実行してください。
 
-!!! note
+!!! Question
 
     IPアドレスについて解説しています。
     [IPアドレスとは](../security//ip.md)
 
-!!! note
+!!! info
 
     `~/.ssh/config`を書くことで、簡単にssh接続することが可能です。
     [SSHの設定](../appendix/ssh-config.md)
@@ -35,7 +35,7 @@ ssh -i labsuser.pem ubuntu@12.34.567.890
 
 ## コマンドを入力する
 
-!!! note
+!!! Question
 
     コマンドについて解説しています。
     [コマンドについて](../linux/cmd-tutorial.md)
@@ -80,7 +80,7 @@ Supported modules:
 
 パッケージ管理コマンドのバージョンを確認しています。
 
-!!! note
+!!! Question
 
     パッケージ管理について解説しています。
     [パッケージ管理について](../linux/packages.md)
@@ -103,7 +103,7 @@ UBUNTU_CODENAME=jammy
 
 OS の情報を確認しています。
 
-!!! note
+!!! Question
 
     UbuntuはLinuxの一種です。
     Linuxについて解説しています。

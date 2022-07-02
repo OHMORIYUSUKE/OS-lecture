@@ -42,12 +42,12 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 `apt`コマンドを用いて PHP をインストールする。
 
-!!! note
+!!! Question
 
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
 
-!!! note
+!!! Question
 
     PHPについて解説しています。
     [PHPについて](../dynamic-content/php.md)
@@ -84,7 +84,7 @@ phpinfo();
 
 `index.php`には上記のように書いてみましょう。
 
-!!! note
+!!! info
 
     viを使わずに編集したい方はこちらの方法でも編集できます。ここでは、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
     [vscode で開発(付録)](../appendix/remote-ssh.md)
@@ -102,7 +102,7 @@ phpinfo();
 
 ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/index.php)
 
-!!! note
+!!! Question
 
     IPアドレスについて解説しています。
     [IPアドレスとは](../security//ip.md)
@@ -111,12 +111,12 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 
 上記のように表示されます。正しく PHP のプログラムが動作していることが確認できます。
 
-!!! note
+!!! warning
 
     上の画像のような画面が出ない場合は、ログを確認しましょう。エラーの原因が分かるかもしれません。
     [ログを確認](../appendix/apach-log.md)
 
-!!! note
+!!! warning
 
     もし正常に動作しない場合は、Apachを再起動してください。
     [apachの操作方法](./apach-start.md)
@@ -145,7 +145,7 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 
 上記のように表示されます。正しく PHP のプログラムが動作していることが確認できます。
 
-!!! note
+!!! info
 
     viで書き換えるのが大変だと感じてくると思います。ここで、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
     [vscode で開発(付録)](../appendix/remote-ssh.md)

@@ -4,7 +4,7 @@
 
 ### HTML を見る
 
-!!! note
+!!! Question
 
     HTMLについて解説しています。
     [HTMLについて](../static-content/html-css-js.md)
@@ -36,7 +36,7 @@ ubuntu@ip-172-31-85-199:/var/www/html$ cat index.html
 
 > `cat`コマンドはファイルの中身を表示するコマンドである。
 
-!!! note
+!!! info
 
     `ubuntu@ip-172-31-85-199:/var/www/html$ vi index.html`と打つことで`vi`(CLI エディタ)でファイルを編集することができます。
 
@@ -55,14 +55,14 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo rm -f index.html && sudo touch index
 > `sudo`とは superuser do の略である。`root`ユーザーで実行したいときにコマンドの前につける。
 > SSH したときに指定したユーザー(Ubuntu)ではファイルを書き込む権限がないので`root`ユーザーになる必要がある。
 
-!!! note
+!!! info
 
     ファイルの中身を消去する方法は多々ある。
     https://qiita.com/nabewata07/items/e67d008a1f10429bb3bf
 
 #### `index.html`に書き込む
 
-!!! note
+!!! info
 
     viを使わずに編集したい方はこちらの方法でも編集できます。ここでは、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
     [vscode で開発(付録)](../appendix/remote-ssh.md)

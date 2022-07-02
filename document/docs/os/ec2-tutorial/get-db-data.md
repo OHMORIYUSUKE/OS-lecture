@@ -57,7 +57,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 これで PHP からデータベース(MySQL)にアクセスできるようになりました。
 
-!!! note
+!!! Question
 
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
@@ -66,12 +66,12 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 PHP からデータベースにアクセスし、**データの作成**、**データの削除**、**データの取得**を行います。
 
-!!! note
+!!! Question
 
     MySQLについて解説しています。
     [MySQLについて](../middleware/database.md)
 
-!!! note
+!!! info
 
     データベース(RDB リレーショナルデータベース)で、**データの作成**、**データの削除**、**データの取得**、**データの更新**を行うことを、
     データの作成（Create）、読み出し（Read）、更新（Update）、削除（Delete）の頭文字をとって**CRUD**と言われている。
@@ -161,7 +161,7 @@ if ($_POST['method'] == 'delete') {
 
 ![](../../assets/images/get_db_item_php.png)
 
-!!! note
+!!! warning
 
     エラーが出た場合は、[ログ](../appendix/apach-log.md)を見てください。
 

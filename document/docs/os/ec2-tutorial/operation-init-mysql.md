@@ -2,7 +2,7 @@
 
 MySQL の初期設定は安全ではない設定があるので、変更していきます。
 
-!!! note
+!!! Question
 
     MySQLについて解説しています。
     [MySQLについて](../middleware/database.md)

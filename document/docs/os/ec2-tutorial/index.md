@@ -9,7 +9,7 @@
 
 ![](../../assets/images/Apach_defoulte.png)
 
-!!! note
+!!! Question
 
     WEBサーバーについて解説しています。
     [WEBサーバーについて](../middleware/web-server.md)
@@ -20,7 +20,7 @@ Apach 上の PHP で`Hello World`を出力する
 
 ![](../../assets/images/html_hello.png)
 
-!!! note
+!!! Question
 
     PHPについて解説しています。
     [PHPについて](../dynamic-content/php.md)
@@ -31,7 +31,7 @@ MySQL を起動
 
 ![](../../assets/images/mysql_login.png)
 
-!!! note
+!!! Question
 
     データベースについて解説しています。
     [データベースについて](../middleware/database.md)
