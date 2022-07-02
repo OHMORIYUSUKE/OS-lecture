@@ -99,6 +99,11 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
     **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
 
+!!! note
+
+    IPアドレスについて解説しています。
+    [IPアドレスについて](../security/ip.md)
+
 ![](../../assets/images/Apach_defoulte.png)
 
 ブラウザに上記のような画面が出ていることが確認できます。
@@ -106,6 +111,11 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ## ソフトウェアの制御
 
 ソフトウェアの基本的な操作(起動、停止など)を解説します。
+
+!!! note
+
+    コマンド操作について解説しています。
+    [コマンド操作について](../linux/cmd-tutorial.md)
 
 ### 停止
 

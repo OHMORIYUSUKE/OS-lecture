@@ -16,7 +16,7 @@ Apach と Nginx は WEB サーバーとして用いられます。
 
 ![](../../assets/images/Nginx_logo.svg.png){ align=right width="250" }
 
-!!! note
+!!! info
 
     Pythonの場合は、**uvicorn**,**uWSGI**
     Javaの場合は、**Tomcat**

@@ -2,6 +2,13 @@
 
 ## MySQL をインストール
 
+オープンソースの SQL リレーショナルデータベース管理システムです。
+
+!!! note
+
+    データベースについて解説しています。
+    [データベースとは](../middleware/database.md)
+
 ### インストール
 
 ```sh
@@ -90,6 +97,14 @@ mysql  Ver 8.0.29-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu))
 ```
 
 MySQL がインストールされていることが確認できます。
+
+!!! note
+
+    コマンドについて解説しています。
+    [コマンドについて](../linux/cmd-tutorial.md)
+
+    CLIについて解説しています。
+    [CLIについて](../linux/cli-gui.md)
 
 ### 接続
 

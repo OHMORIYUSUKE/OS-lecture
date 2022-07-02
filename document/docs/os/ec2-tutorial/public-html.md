@@ -6,6 +6,14 @@
 
 !!! note
 
+    HTMLについて解説しています。
+    [HTMLについて](../static-content/html-css-js.md)
+
+    静的コンテンツについて解説しています。
+    [静的コンテンツについて](../static-content/index.md)
+
+!!! note
+
     **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
 
 何もしてない場合の画面

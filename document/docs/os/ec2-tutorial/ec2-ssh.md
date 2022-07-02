@@ -4,6 +4,11 @@
 
 手元の PC から EC2 に接続する。
 
+!!! note
+
+    SSHについて解説しています。
+    [SSHとは(公開鍵・秘密鍵)](../security/ssh.md)
+
 ```sh
 ssh -i labsuser.pem ubuntu@12.34.567.890
 ```
@@ -16,6 +21,11 @@ ssh -i labsuser.pem ubuntu@12.34.567.890
 
 !!! note
 
+    IPアドレスについて解説しています。
+    [IPアドレスとは](../security//ip.md)
+
+!!! note
+
     `~/.ssh/config`を書くことで、簡単にssh接続することが可能です。
     [SSHの設定](../appendix/ssh-config.md)
 
@@ -24,6 +34,14 @@ ssh -i labsuser.pem ubuntu@12.34.567.890
 ターミナルの感じが変化したと思います。これで EC2 に接続できました。
 
 ## コマンドを入力する
+
+!!! note
+
+    コマンドについて解説しています。
+    [コマンドについて](../linux/cmd-tutorial.md)
+
+    CLIについて解説しています。
+    [CLIについて](../linux/cli-gui.md)
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ whoami
@@ -62,6 +80,11 @@ Supported modules:
 
 パッケージ管理コマンドのバージョンを確認しています。
 
+!!! note
+
+    パッケージ管理について解説しています。
+    [パッケージ管理について](../linux/packages.md)
+
 ```sh
 ubuntu@ip-172-31-85-199:~$ cat /etc/os-release
 PRETTY_NAME="Ubuntu 22.04 LTS"
@@ -79,3 +102,9 @@ UBUNTU_CODENAME=jammy
 ```
 
 OS の情報を確認しています。
+
+!!! note
+
+    UbuntuはLinuxの一種です。
+    Linuxについて解説しています。
+    [Linuxについて](../linux/packages.md)

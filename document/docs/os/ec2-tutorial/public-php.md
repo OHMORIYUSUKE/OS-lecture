@@ -47,6 +47,14 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
 
+!!! note
+
+    PHPについて解説しています。
+    [PHPについて](../dynamic-content/php.md)
+
+    動的コンテンツについて解説しています。
+    [動的コンテンツについて](../dynamic-content/index.md)
+
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ php --version
 PHP 8.1.2 (cli) (built: Apr  7 2022 17:46:26) (NTS)
@@ -78,6 +86,11 @@ phpinfo();
 
 !!! note
 
+    viを使わずに編集したい方はこちらの方法でも編集できます。ここでは、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
+    [vscode で開発(付録)](../appendix/remote-ssh.md)
+
+!!! note
+
     `phpinfo();`はPHPからシステムに関する情報を取得する関数です。
     https://www.php.net/manual/ja/tutorial.firstpage.php
 
@@ -88,6 +101,11 @@ phpinfo();
     **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
 
 ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/index.php)
+
+!!! note
+
+    IPアドレスについて解説しています。
+    [IPアドレスとは](../security//ip.md)
 
 ![](../../assets/images/php_info.png)
 

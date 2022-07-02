@@ -9,17 +9,32 @@
 
 ![](../../assets/images/Apach_defoulte.png)
 
+!!! note
+
+    WEBサーバーについて解説しています。
+    [WEBサーバーについて](../middleware/web-server.md)
+
 ## ステップ 2
 
 Apach 上の PHP で`Hello World`を出力する
 
 ![](../../assets/images/html_hello.png)
 
+!!! note
+
+    PHPについて解説しています。
+    [PHPについて](../dynamic-content/php.md)
+
 ## ステップ 3
 
 MySQL を起動
 
 ![](../../assets/images/mysql_login.png)
+
+!!! note
+
+    データベースについて解説しています。
+    [データベースについて](../middleware/database.md)
 
 ## ステップ 4
 

@@ -20,6 +20,6 @@
 
     JavaScript などのように、ブラウザが動作するパソコン上で実行されるタイプの動的コンテンツも存在します。
 
-!!! note
+!!! info
 
-    Node.jsのようなWEBサーバー上で動作するJavaScriptも存在します。(この資料では、ブラウザ上で動作するJavaScriptは`JavaScript`とし、WEBサーバー上で動作するJavaScriptは`Node.js`と表記します。)
+    Node.jsのようなWEBサーバー上で動作するJavaScriptも存在します。
