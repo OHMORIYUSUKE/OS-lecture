@@ -31,7 +31,7 @@ boot  etc  lib   lib64  lost+found  mnt    proc  run   snap  sys  usr
 
 ## Linux のコマンド
 
-### ls
+### `ls`
 
 ```sh
 ubuntu@ip-172-31-85-199:/$ ls
@@ -41,7 +41,7 @@ boot  etc  lib   lib64  lost+found  mnt    proc  run   snap  sys  usr
 
 現在のディレクトリに存在するファイル、ディレクトリを出力します。(`ls`を入力し、現在のディレクトリにファイルまたはディレクトリがない場合は何も出力されません。)
 
-### pwd
+### `pwd`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ pwd
@@ -50,7 +50,7 @@ ubuntu@ip-172-31-85-199:~$ pwd
 
 現在のディレクトリの位置を表示します。
 
-### cd
+### `cd`
 
 ```sh
 ubuntu@ip-172-31-85-199:/$ cd home/ubuntu/
@@ -73,7 +73,7 @@ ubuntu@ip-172-31-85-199:/$ cd home/ubuntu/
 
     `cd ..`とすることで１つ上のディレクトリに移動できます。
 
-### touch
+### `touch`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ touch main.py
@@ -83,7 +83,7 @@ main.py
 
 ファイルを作成することができます。ここでは、`main.py`を作成しています。
 
-### mkdir
+### `mkdir`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ mkdir test
@@ -93,7 +93,7 @@ main.py  test
 
 ディレクトリを作成することができます。ここでは、`test`ディレクトリを作成しています。
 
-### echo
+### `echo`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ echo "hello"
@@ -102,7 +102,16 @@ hello
 
 文字列を出力します。`echo`の引数に文字列(`"hello"`)を指定することで任意の文字列を出力することができます。
 
-### >
+### `cat`
+
+```sh
+ubuntu@ip-172-31-85-199:~$ cat main.py
+```
+
+ファイルの中身をターミナルに出力することができます。
+`main.py`の中身を出力することができます。
+
+### `>`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ echo 'print("Hello World !")' > main.py
@@ -115,7 +124,30 @@ ubuntu@ip-172-31-85-199:~$ echo 'print("Hello World !")' > main.py
     `python3 main.py`を実行してみましょう。
     UbuntuにはPython3がインストールされています。
 
-### --version
+### `<`
+
+```sh
+ubuntu@ip-172-31-85-199:~$ cat < main.py
+```
+
+上記の`>`コマンドの逆です。
+
+`main.py`の内容を`cat`コマンドに渡しています。
+
+### `|`
+
+```sh
+ubuntu@ip-172-31-85-199:~$ echo 'ls' | sh
+```
+
+パイプコマンドです。`|`の前のコマンドの内容を`|`の後のコマンドに渡しています。
+`echo 'ls'`で`ls`という文字を出力し、`sh`コマンドに`ls`を渡しています。
+
+!!! note
+
+      `sh`コマンドは、shellとして実行することを示しています。
+
+### `--version`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ python3 --version
@@ -130,7 +162,7 @@ Python 3.10.4
 
     **うまく動作しないときや、質問する際はバージョンを明記すると、回答者が問題を解決しやすくなることがあります。**
 
-### rm
+### `rm`
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ ls
@@ -146,7 +178,7 @@ ubuntu@ip-172-31-85-199:~$ ls
 `-r`のオプションでディレクトリを削除できます。
 `-f`のオプションでファイルを削除することができます。
 
-### chmod
+### `chmod`
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo chmod 666 index.html
