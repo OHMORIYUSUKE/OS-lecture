@@ -55,6 +55,7 @@ nav:
           - "ホーム": "os/appendix/index.md"
           - "Python(CGI)": "os/appendix/python.md"
           - "Perl(CGI)": "os/appendix/perl.md"
+          - "Python(Flask)": "os/appendix/flask.md"
           - "MySQLテクニック": "os/appendix/mysql.md"
           - "SSH設定": "os/appendix/ssh-config.md"
           - "仮想環境(docker)": "os/appendix/docker.md"

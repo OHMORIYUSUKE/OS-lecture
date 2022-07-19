@@ -2,6 +2,7 @@
 
 - [Python(CGI)](./python.md)
 - [Perl(CGI)](./perl.md)
+- [Python(Flask)](./flask.md)
 - [MySQL テクニック](./docker.md)
 - [SSH 設定](./ssh-config.md)
 - [Docker(仮想環境・コンテナ)](./docker.md)
