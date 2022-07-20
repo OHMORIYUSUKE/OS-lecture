@@ -303,7 +303,7 @@ ubuntu@ip-172-31-85-199:/var/www/html/flask-app$ uwsgi --ini uwsgi.ini
     **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
     `http://{ip address}/`にアクセスする。
 
-PHP のアプリケーションで`ペン`,`100`と入力する。
+PHP のアプリケーションで`ノート`,`100`と入力する。
 
 ![](../../assets/images/get_db_item_php.png)
 
@@ -312,7 +312,7 @@ PHP のアプリケーションで`ペン`,`100`と入力する。
     **SSH**接続した際に使った**IP アドレス**をブラウザに入力する。
     `http://{ip address}/flask/`にアクセスする。
 
-flask のアプリケーションで PHP で入力した、`ペン`,`100`が以下のように出力されていれば成功です。
+flask のアプリケーションで PHP で入力した、`ノート`,`100`が以下のように出力されていれば成功です。
 
 ![](../../assets/images/flask_get_db_item.png)
 
