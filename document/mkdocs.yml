@@ -51,6 +51,7 @@ nav:
   - "実践編":
       - "構築するもの": "practice/index.md"
       - "EC2 チュートリアル":
+          - "目次": "practice/ec2-tutorial/index.md"
           - "AWSを起動": "practice/ec2-tutorial/ec2-start.md"
           - "AWSコンソール": "practice/ec2-tutorial/console.md"
           - "EC2にアクセス": "practice/ec2-tutorial/ec2-ssh.md"
