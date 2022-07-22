@@ -5,62 +5,73 @@ site_author: yusuke-ohmori
 # repo_name: OHMORIYUSUKE/OS-lecture
 # repo_url: https://github.com/OHMORIYUSUKE/OS-lecture
 copyright: © 2022 yusuke-ohmori
-license: MTI
+# license: MTI
 # edit_uri: blob/main/document/docs/
 
 nav:
-  - "始める前に": "index.md"
-  - "目次": "contents.md"
-  - "オペレーティングシステム":
-      - "最終目標": "os/index.md"
+  - "目次": "index.md"
+  - "始める前に": "attention.md"
+  - "ハンズオン(超初心者向け)":
+      - "目次": "beginner/index.md"
+      - "ディレクトリとファイル":
+          - "ディレクトリ": "beginner/file-dir/dir.md"
+          - "ファイル": "beginner/file-dir/file.md"
+      - "ユーザーとグループ":
+          - "ユーザー": "beginner/user-group/user.md"
+          - "グループ": "beginner/user-group/group.md"
+      - "ファイル・ディレクトリの権限":
+          - "パーミッション": "beginner/authority/permission.md"
+  - "知識編":
+      - "目次": "knowledge/index.md"
       - "AWS":
-          - "AWSとは": "os/aws/index.md"
-          - "AWSアカデミー": "os/aws/aws-academy.md"
-          - "EC2とは": "os/aws/ec2.md"
+          - "AWSとは": "knowledge/aws/index.md"
+          - "AWSアカデミー": "knowledge/aws/aws-academy.md"
+          - "EC2とは": "knowledge/aws/ec2.md"
       - "オペレーティングシステム":
-          - "Linuxとは": "os/linux/index.md"
-          - "CLIとGUI": "os/linux/cli-gui.md"
-          - "CLI実践": "os/linux/cmd-tutorial.md"
-          - "パッケージ管理": "os/linux/packages.md"
+          - "Linuxとは": "knowledge/linux/index.md"
+          - "CLIとGUI": "knowledge/linux/cli-gui.md"
+          - "CLI実践": "knowledge/linux/cmd-tutorial.md"
+          - "パッケージ管理": "knowledge/linux/packages.md"
       - "セキュリティ":
-          - "セキュリティとは": "os/security/index.md"
-          - "IPアドレス": "os/security/ip.md"
-          - "ポート": "os/security/port.md"
-          - "SSHとは(公開鍵・秘密鍵)": "os/security/ssh.md"
-          - "パーミッション": "os/security/permission.md"
+          - "セキュリティとは": "knowledge/security/index.md"
+          - "IPアドレス": "knowledge/security/ip.md"
+          - "ポート": "knowledge/security/port.md"
+          - "SSHとは(公開鍵・秘密鍵)": "knowledge/security/ssh.md"
+          - "パーミッション": "knowledge/security/permission.md"
       - "ミドルウェア":
-          - "ミドルウェアとは": "os/middleware/index.md"
-          - "WEBサーバー": "os/middleware/web-server.md"
-          - "データベース": "os/middleware/database.md"
+          - "ミドルウェアとは": "knowledge/middleware/index.md"
+          - "WEBサーバー": "knowledge/middleware/web-server.md"
+          - "データベース": "knowledge/middleware/database.md"
       - "静的コンテンツ":
-          - "静的コンテンツとは": "os/static-content/index.md"
-          - "HTML, CSS, JavaScritp": "os/static-content/html-css-js.md"
+          - "静的コンテンツとは": "knowledge/static-content/index.md"
+          - "HTML, CSS, JavaScritp": "knowledge/static-content/html-css-js.md"
       - "動的コンテンツ":
-          - "動的コンテンツとは": "os/dynamic-content/index.md"
-          - "PHP": "os/dynamic-content/php.md"
+          - "動的コンテンツとは": "knowledge/dynamic-content/index.md"
+          - "PHP": "knowledge/dynamic-content/php.md"
+  - "実践編":
+      - "構築するもの": "practice/index.md"
       - "EC2 チュートリアル":
-          - "構築するもの": "os/ec2-tutorial/index.md"
-          - "AWSを起動": "os/ec2-tutorial/ec2-start.md"
-          - "AWSコンソール": "os/ec2-tutorial/console.md"
-          - "EC2にアクセス": "os/ec2-tutorial/ec2-ssh.md"
-          - "Apachをインストール・起動": "os/ec2-tutorial/apach-start.md"
-          - "HTMLを公開": "os/ec2-tutorial/public-html.md"
-          - "PHPを公開": "os/ec2-tutorial/public-php.md"
-          - "MySQLをインストール・起動": "os/ec2-tutorial/start-mysql.md"
-          - "MySQLを操作(初期設定)": "os/ec2-tutorial/operation-init-mysql.md"
-          - "MySQLを操作(データベース・テーブル)": "os/ec2-tutorial/operation-table-mysql.md"
-          - "PHPからデータベースにアクセス": "os/ec2-tutorial/get-db-data.md"
-          - "PHPのコードについて": "os/ec2-tutorial/php-tutorial.md"
+          - "AWSを起動": "practice/ec2-tutorial/ec2-start.md"
+          - "AWSコンソール": "practice/ec2-tutorial/console.md"
+          - "EC2にアクセス": "practice/ec2-tutorial/ec2-ssh.md"
+          - "Apachをインストール・起動": "practice/ec2-tutorial/apach-start.md"
+          - "HTMLを公開": "practice/ec2-tutorial/public-html.md"
+          - "PHPを公開": "practice/ec2-tutorial/public-php.md"
+          - "MySQLをインストール・起動": "practice/ec2-tutorial/start-mysql.md"
+          - "MySQLを操作(初期設定)": "practice/ec2-tutorial/operation-init-mysql.md"
+          - "MySQLを操作(データベース・テーブル)": "practice/ec2-tutorial/operation-table-mysql.md"
+          - "PHPからデータベースにアクセス": "practice/ec2-tutorial/get-db-data.md"
+          - "PHPのコードについて": "practice/ec2-tutorial/php-tutorial.md"
       - "付録":
-          - "ホーム": "os/appendix/index.md"
-          - "Python(CGI)": "os/appendix/python.md"
-          - "Perl(CGI)": "os/appendix/perl.md"
-          - "Python(Flask)": "os/appendix/flask.md"
-          - "MySQLテクニック": "os/appendix/mysql.md"
-          - "SSH設定": "os/appendix/ssh-config.md"
-          - "仮想環境(docker)": "os/appendix/docker.md"
-          - "ログ(Apach)": "os/appendix/apach-log.md"
-          - "vscodeで開発": "os/appendix/remote-ssh.md"
+          - "ホーム": "practice/appendix/index.md"
+          - "Python(CGI)": "practice/appendix/python.md"
+          - "Perl(CGI)": "practice/appendix/perl.md"
+          - "Python(Flask)": "practice/appendix/flask.md"
+          - "MySQLテクニック": "practice/appendix/mysql.md"
+          - "SSH設定": "practice/appendix/ssh-config.md"
+          - "仮想環境(docker)": "practice/appendix/docker.md"
+          - "ログ(Apach)": "practice/appendix/apach-log.md"
+          - "vscodeで開発": "practice/appendix/remote-ssh.md"
   - "ライセンス": "license.md"
 
 plugins:
