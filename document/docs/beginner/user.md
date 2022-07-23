@@ -19,7 +19,7 @@
 
 **<img class="avatar" src="/assets/images/avatar/ojisan2.png" />上司**
 
-「君に後輩ができたぞ。君に、後輩のために後輩用の**ユーザー**を作成して欲しい。」
+「君に後輩ができたぞ。後輩の名前は**太郎**君だ！君に、後輩のために後輩用の**ユーザー**を作成して欲しい。」
 
 **<img class="avatar" src="/assets/images/avatar/face_smile_woman3.png" />あなた**
 
@@ -33,8 +33,6 @@
 
 **<img class="avatar" src="/assets/images/avatar/face_smile_woman3.png" />あなた**
 
-(`whoami`コマンドを打つ)
-
 ```sh
 ubuntu@ip-172-31-85-199:~$ whoami
 ubuntu
@@ -43,6 +41,8 @@ ubuntu
 「出ました。私は`ubuntu`ユーザーとして操作していました。」
 
 (**ユーザー**を作ろう！`adduser`コマンドを用いると**ユーザー**が作れるのか)
+
+(後輩の名前は**太郎**だからユーザー名も`tarou`でいいか。)
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ adduser tarou
