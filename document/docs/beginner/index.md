@@ -1,5 +1,4 @@
 # 目次
 
-- [ディレクトリとファイル](./file-dir/dir.md)
-- [ユーザーとグループ](./user-group/user.md)
-- [ファイル・ディレクトリの権限](./authority/permission.md)
+- [ユーザー](./user.md)
+- [ディレクトリとファイル](./dir-file.md)

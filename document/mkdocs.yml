@@ -13,14 +13,8 @@ nav:
   - "始める前に": "attention.md"
   - "ハンズオン(超初心者向け)":
       - "目次": "beginner/index.md"
-      - "ディレクトリとファイル":
-          - "ディレクトリ": "beginner/file-dir/dir.md"
-          - "ファイル": "beginner/file-dir/file.md"
-      - "ユーザーとグループ":
-          - "ユーザー": "beginner/user-group/user.md"
-          - "グループ": "beginner/user-group/group.md"
-      - "ファイル・ディレクトリの権限":
-          - "パーミッション": "beginner/authority/permission.md"
+      - "ユーザー": "beginner/user.md"
+      - "ディレクトリとファイル": "beginner/dir-file.md"
   - "知識編":
       - "目次": "knowledge/index.md"
       - "AWS":
@@ -151,6 +145,8 @@ markdown_extensions:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css
+  - "stylesheets/avatar.css"
+  - "stylesheets/title.css"
 
 extra_javascript:
   - https://code.jquery.com/jquery-1.12.4.min.js
