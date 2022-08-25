@@ -183,11 +183,3 @@ PHP 以外にも Python や Perl での解説もあります。
 
 [Python(CGI)](../appendix/python.md)
 [Perl(CGI)](../appendix/perl.md)
-
-### Python(Flask)
-
-**データベースからデータを取得して表示**するところまで解説しています。
-
-Flask という Python の軽量な WEB フレームワークを用いて解説します。
-
-[Python(Flask)](../appendix/flask.md)

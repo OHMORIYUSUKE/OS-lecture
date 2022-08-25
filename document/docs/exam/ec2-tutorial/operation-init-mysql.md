@@ -12,10 +12,10 @@ MySQL の初期設定は安全ではない設定があるので、変更して�
 初期設定では、root ユーザーにパスワードが設定されていません。root ユーザーにパスワードを設定していきます。
 
 ```sh
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '{password}';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'ルートのパスワード';
 ```
 
-上記のコマンドの`{password}`を好きなパスワードに変更してください。
+上記のコマンドの`ルートのパスワード`を好きなパスワードに変更してください。
 
 !!! note
 
@@ -27,7 +27,7 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '{
     ```
     特殊文字(#$%&など)、大文字(ABCなど)、小文字(abcなど)、数字(123など)を用いるかつ、8文字以上のパスワードにしてください。
 
-今回は、MySQL の root ユーザーのパスワードに**ルートのパスワード**を設定します。
+今回は、MySQL の root ユーザーのパスワードに**ルートのパスワード**を設定します。好きなパスワードを設定してください。
 
 ```sh
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'ルートのパスワード';
@@ -131,44 +131,8 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-`mysql -uroot -p{password}`を入力する。
+`mysql -uroot -pルートのパスワード`を入力する。
 
 先ほど、MySQL の root ユーザーに設定したパスワード(ルートのパスワード)を引数で渡し、MySQL に入る。
 
 `-u`はユーザー名を示しており、`-p`はユーザーのパスワードを示しています。
-
-### 初期設定を確認
-
-```sh
-mysql>  show variables like '%char%';
-+--------------------------------------+----------------------------+
-| Variable_name                        | Value                      |
-+--------------------------------------+----------------------------+
-| character_set_client                 | utf8mb4                    |
-| character_set_connection             | utf8mb4                    |
-| character_set_database               | utf8mb4                    |
-| character_set_filesystem             | binary                     |
-| character_set_results                | utf8mb4                    |
-| character_set_server                 | utf8mb4                    |
-| character_set_system                 | utf8mb3                    |
-| character_sets_dir                   | /usr/share/mysql/charsets/ |
-| validate_password.special_char_count | 1                          |
-+--------------------------------------+----------------------------+
-9 rows in set (0.00 sec)
-
-mysql>  show variables like '%storage%';
-+---------------------------------+-----------+
-| Variable_name                   | Value     |
-+---------------------------------+-----------+
-| default_storage_engine          | InnoDB    |
-| default_tmp_storage_engine      | InnoDB    |
-| disabled_storage_engines        |           |
-| internal_tmp_mem_storage_engine | TempTable |
-+---------------------------------+-----------+
-4 rows in set (0.00 sec)
-```
-
-1. `show variables like '%char%';`
-   文字コードの設定を確認しています。(MySQL version 8.0 では utf8mb4 が設定されています。)
-2. `show variables like '%storage%';`
-   ストレージエンジンの指定を確認しています。(MySQL version 8.0 では InnoDB が設定されています。)
