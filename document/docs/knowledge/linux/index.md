@@ -20,12 +20,6 @@ Linux はオープンソースであり、無償で利用できるディスト�
 
 また、Linux は **CUI** での操作がしやすいのに対して、Microsoft Windows は **GUI** の操作がしやすいことが特徴である。
 
-!!! Info
-
-    ゲームハードのOSとして採用された事例もある。
-    セガ、Windows CEをベースとした新世代ゲーム機「Dreamcast」を発表
-    https://pc.watch.impress.co.jp/docs/article/980521/sega.htm
-
 ## 参考
 
 詳細はこちらを参照してください。

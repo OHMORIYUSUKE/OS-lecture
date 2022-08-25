@@ -33,6 +33,8 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '�
     ```
     特殊文字(#$%&など)、大文字(ABCなど)、小文字(abcなど)、数字(123など)を用いるかつ、8文字以上のパスワードにしてください。
 
+    https://dev.mysql.com/doc/refman/8.0/ja/validate-password.html
+
 今回は、MySQL の root ユーザーのパスワードに**ルートのパスワード**を設定します。好きなパスワードを設定してください。
 
 ```sh

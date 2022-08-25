@@ -1,6 +1,6 @@
 # HTML
 
-## HTML 公開
+## HTML を公開する
 
 ### HTML を見る
 

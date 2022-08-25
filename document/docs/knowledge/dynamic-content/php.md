@@ -8,6 +8,6 @@
 
 また、データベースとの連携も容易です。
 
-拡張子は、`.php`である。
+拡張子は、`.php`です。
 
 [公式マニュアル](https://www.php.net/manual/ja/index.php)

@@ -133,14 +133,13 @@ MySQL に接続されていることが確認できます。`mysql>`に SQL を�
 
     ちなみに、
     ```sh
-    ubuntu@ip-172-31-85-199:/var/log/mysql$ sudo mysql -uroot -p
+    ubuntu@ip-172-31-85-199:/var/log/mysql$ sudo mysql -uroot
     Enter password:
     ```
     と実行すると`root`ユーザーでmysqlに入ることができます。
     (MySQLにrootで入るには、rootユーザーで実行する必要がある。)
 
     `-u`:`root`ユーザーで入ることを指定
-    `-p`:`root`ユーザーのパスワードを指定(インストール直後は空)
     (`Enter password:`も入力せずにエンターを入力)
 
 !!! Danger
