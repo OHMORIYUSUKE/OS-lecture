@@ -20,7 +20,7 @@ try {
 
 // POST
 if ($_POST['method'] == 'post') {
-    $stmt = $dbh->prepare("INSERT INTO product (name, price) VALUES (:name, :price)");
+    $stmt = $dbh->prepare("______ ____ product (name, price) VALUES (:name, :price)");
     $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
     $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
     $res = $stmt->execute();
@@ -30,7 +30,7 @@ if ($_POST['method'] == 'post') {
 
 // DELETE
 if ($_POST['method'] == 'delete') {
-    $stmt = $dbh->prepare("DELETE FROM product WHERE name = :name AND price=:price");
+    $stmt = $dbh->prepare("______ ____ product WHERE name = :name AND price=:price");
     $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
     $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
     $res = $stmt->execute();
@@ -129,7 +129,7 @@ SQL を`PDO`クラスの`query`メソッドの引数に渡します。そうす�
 ```php
 // POST
 if ($_POST['method'] == 'post') {
-    $stmt = $dbh->prepare("INSERT INTO product (name, price) VALUES (:name, :price)");
+    $stmt = $dbh->prepare("______ ____ product (name, price) VALUES (:name, :price)");
     $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
     $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
     $res = $stmt->execute();
@@ -168,7 +168,7 @@ HTML のフォームからデータを`POST`します。
 3. PHP の処理
 
 ```php
-$stmt = $dbh->prepare("INSERT INTO product (name, price) VALUES (:name, :price)");
+$stmt = $dbh->prepare("______ ____ product (name, price) VALUES (:name, :price)");
 $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
 $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
 $res = $stmt->execute();
@@ -188,3 +188,11 @@ $res = $stmt->execute();
 
     `<input name="method" type="hidden" value="post">`
     type="hidden"を指定することで、`<input>`タグを非表示にすることができる。
+
+## 確認
+
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
+
+```sh
+$ grech check chapter "php_code_2"
+```

@@ -91,10 +91,12 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ## 確認
 
 ```sh
-$ grech check chapter "chapter02"
+ubuntu@ip-172-31-85-199:~$ apache2 -v
+Server version: Apache/2.4.52 (Ubuntu)
+Server built:   2022-06-14T12:30:21
 ```
 
-を実行し、**apache2**がインストールできたか確認します。
+**apache2**がインストールされていることが確認できます。
 
 !!! Question
 
@@ -133,6 +135,23 @@ ubuntu@ip-172-31-85-199:/var/www/html$ ____ _________ ____ ________
 
 Apache2 を停止する。
 
+#### 確認
+
+```sh
+ubuntu@ip-172-31-85-199:~$ systemctl status apache2
+○ apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: inactive (dead) since Thu 2022-08-25 11:47:02 UTC; 1min 27s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 447 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+    Process: 697 ExecReload=/usr/sbin/apachectl graceful (code=exited, status=0/SUCCESS)
+    Process: 1368 ExecStop=/usr/sbin/apachectl graceful-stop (code=exited, status=0/SUCCESS)
+   Main PID: 565 (code=exited, status=0/SUCCESS)
+        CPU: 711ms
+```
+
+白色の〇と inactive になっていると停止しています。
+
 ### 起動
 
 ```sh
@@ -140,6 +159,32 @@ ubuntu@ip-172-31-85-199:/var/www/html$ ____ _________ _____ ________
 ```
 
 Apache2 を起動する。
+
+#### 確認
+
+```sh
+ubuntu@ip-172-31-85-199:~$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2022-08-25 11:23:39 UTC; 20min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 447 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+    Process: 697 ExecReload=/usr/sbin/apachectl graceful (code=exited, status=0/SUCCESS)
+   Main PID: 565 (apache2)
+      Tasks: 7 (limit: 1145)
+     Memory: 49.0M
+        CPU: 619ms
+     CGroup: /system.slice/apache2.service
+             ├─ 565 /usr/sbin/apache2 -k start
+             ├─ 770 /usr/sbin/apache2 -k start
+             ├─ 771 /usr/sbin/apache2 -k start
+             ├─ 772 /usr/sbin/apache2 -k start
+             ├─ 773 /usr/sbin/apache2 -k start
+             ├─ 774 /usr/sbin/apache2 -k start
+             └─1148 /usr/sbin/apache2 -k start
+```
+
+緑色の〇と**active**になっていれば起動しています。
 
 ### 再起動
 
@@ -149,15 +194,41 @@ ubuntu@ip-172-31-85-199:/var/www/html$ ____ _________ _______ ________
 
 Apache2 を再起動する。
 
-## 確認
+#### 確認
 
 ```sh
-$ grech check chapter "chapter03"
+ubuntu@ip-172-31-85-199:~$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2022-08-25 11:23:39 UTC; 20min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 447 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+    Process: 697 ExecReload=/usr/sbin/apachectl graceful (code=exited, status=0/SUCCESS)
+   Main PID: 565 (apache2)
+      Tasks: 7 (limit: 1145)
+     Memory: 49.0M
+        CPU: 619ms
+     CGroup: /system.slice/apache2.service
+             ├─ 565 /usr/sbin/apache2 -k start
+             ├─ 770 /usr/sbin/apache2 -k start
+             ├─ 771 /usr/sbin/apache2 -k start
+             ├─ 772 /usr/sbin/apache2 -k start
+             ├─ 773 /usr/sbin/apache2 -k start
+             ├─ 774 /usr/sbin/apache2 -k start
+             └─1148 /usr/sbin/apache2 -k start
 ```
 
-を実行し、**apache2**を**停止**、**起動**、**再起動**できたか確認します。
+緑色の〇と**active**になっていれば起動しています。
 
 !!! warning
 
     ブラウザにIPアドレスを入力しても画面が表示されない場合は、Apachが起動していないことが考えられます。
     Apachを起動しましょう。
+
+## 確認
+
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
+
+```sh
+$ grech check chapter "apache"
+```

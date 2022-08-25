@@ -3,13 +3,12 @@
 root ユーザーでアプリケーションからデータベースにアクセスするのは、セキュリティ上で問題があるのでユーザーを作成する。
 
 ```sh
-mysql> create user 'webapp'@'localhost' identified by 'webappのパスワード';
+mysql> ______ ____ '______'@'_________' __________ __ '_____________';
 Query OK, 0 rows affected (0.01 sec)
 
 mysql>
 ```
 
-`create user 'webapp'@'localhost' identified by 'webappのパスワード';`
 ユーザー名を`webapp`
 ホスト名を`localhost`
 パスワードを`webappのパスワード`
@@ -43,7 +42,7 @@ mysql> SELECT Host, User FROM mysql.user;
 ## データベースを作成
 
 ```sh
-mysql> create database webapp;
+mysql> ______ ________ ______;
 Query OK, 1 row affected (0.01 sec)
 
 mysql> show databases;
@@ -59,8 +58,6 @@ mysql> show databases;
 5 rows in set (0.00 sec)
 ```
 
-`create database webapp;`
-
 今回のアプリケーションのためのデータベースを作成します。
 `webapp`というデータベースを作成します。
 
@@ -71,7 +68,7 @@ mysql> show databases;
 ## テーブルを作成
 
 ```sh
-mysql> create table webapp.product (name varchar(255), price int);
+mysql> _____ ______ ______._______ (___ ____, _____ ___);
 Query OK, 0 rows affected (0.04 sec)
 
 mysql> show tables from webapp;
@@ -83,7 +80,6 @@ mysql> show tables from webapp;
 1 row in set (0.00 sec)
 ```
 
-`create table webapp.product (name varchar(255), price int);`
 `webapp`データベースに`product`テーブルを作成する。
 
 product テーブル
@@ -93,6 +89,8 @@ product テーブル
 | name      | price |
 +-----------+-------+
 ```
+
+> name は商品の名前(text)、price は商品の値段(int)
 
 このようなテーブルが作成されます。
 
@@ -105,13 +103,13 @@ product テーブル
 mysql> select * from webapp.product;
 Empty set (0.01 sec)
 
-mysql> INSERT INTO webapp.product(name, price) VALUES ('apple', 100);
+mysql> ______ ____ ______.________(____, _____) ______ ('_____', ___);
 Query OK, 1 row affected (0.00 sec)
 
-mysql> INSERT INTO webapp.product(name, price) VALUES ('pen', 200);
+mysql> ______ ____ ______.________(____, _____) ______ ('_____', ___);
 Query OK, 1 row affected (0.00 sec)
 
-mysql> INSERT INTO webapp.product(name, price) VALUES ('pineapple', 500);
+mysql> ______ ____ ______.________(____, _____) ______ ('_____', ___);
 Query OK, 1 row affected (0.01 sec)
 
 mysql> select * from webapp.product;
@@ -130,7 +128,6 @@ mysql>
 `select * from webapp.product;`
 `webapp`データベースの`product`テーブルを表示する。
 
-`INSERT INTO webapp.product(name, price) VALUES ('apple', 100);`
 `webapp`データベースの`product`テーブルにデータを追加
 
 `select * from webapp.product;`
@@ -206,28 +203,12 @@ mysql>  SHOW GRANTS FOR 'webapp'@'localhost';
 
 !!! note
 
-    これで、アプリケーションから攻撃を受けたとしても他のデータベースにアクセスされる可能性や、データベースを消去されるリスクを下げることができました、
+    これで、アプリケーションから攻撃を受けたとしても他のデータベースにアクセスされる可能性や、データベースを消去されるリスクを下げることができました。
 
----
+## 確認
 
-ここはやらなくていいです。
-
-### 権限を取り消す
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
 
 ```sh
-mysql> REVOKE DELETE, INSERT, SELECT, UPDATE ON webapp.product FROM 'webapp'@'localhost';
-Query OK, 0 rows affected (0.00 sec)
+$ grech check chapter "mysql"
 ```
-
-`REVOKE DELETE, INSERT, SELECT, UPDATE ON webapp.product FROM 'webapp'@'localhost';`
-`'webapp'@'localhost'`から`webapp`データベースの`product`テーブルの`DELETE`(カラムの削除), `INSERT`(データの追加), `SELECT`(データの取得), `UPDATE`(データの更新)の権限を取り消す設定を行います。
-
-!!! note
-
-    誤った設定を行ってしまった際などに参考にしてください。
-
-## 参考
-
-SQL を簡単に実行する方法を解説しています。`.sql`ファイルから SQL を実行します。
-
-[MySQL テクニック](../appendix/mysql.md)

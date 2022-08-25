@@ -5,7 +5,7 @@
 ### `php-pdo`
 
 ```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo apt install php-pdo
+ubuntu@ip-172-31-85-199:/var/www/html$ ____ ___ _______ _______
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -15,10 +15,22 @@ php8.1-common set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
 ```
 
+#### 確認
+
+```sh
+ubuntu@ip-172-31-85-199:~$ apt search php-db
+Sorting... Done
+Full Text Search... Done
+php-db/jammy 1.10.0-1build4 all
+  Database Abstraction Layer
+```
+
+正常にインストールできているか、上記のコマンドで確認してください。
+
 ### `php-mysql`
 
 ```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo apt install php-mysql
+ubuntu@ip-172-31-85-199:/var/www/html$ ____ ___ _______ _________
 Do you want to continue? [Y/n] Y
 Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 php8.1-mysql amd64 8.1.2-1ubuntu2.1 [130 kB]
 Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 php-mysql all 2:8.1+92ubuntu1 [1834 B]
@@ -54,6 +66,19 @@ No user sessions are running outdated binaries.
 
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ```
+
+#### 確認
+
+```sh
+ubuntu@ip-172-31-85-199:~$ apt search php-mysql
+Sorting... Done
+Full Text Search... Done
+php-mysql/jammy,now 2:8.1+92ubuntu1 all [installed]
+  MySQL module for PHP [default]
+
+```
+
+正常にインストールが完了しているか確認してください。
 
 これで PHP からデータベース(MySQL)にアクセスできるようになりました。
 
@@ -94,7 +119,8 @@ try {
 
 // POST
 if ($_POST['method'] == 'post') {
-    $stmt = $dbh->prepare("INSERT INTO product (name, price) VALUES (:name, :price)");
+    // 穴埋め
+    $stmt = $dbh->prepare("______ ____ product (name, price) VALUES (:name, :price)");
     $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
     $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
     $res = $stmt->execute();
@@ -104,7 +130,8 @@ if ($_POST['method'] == 'post') {
 
 // DELETE
 if ($_POST['method'] == 'delete') {
-    $stmt = $dbh->prepare("DELETE FROM product WHERE name = :name AND price=:price");
+    // 穴埋め
+    $stmt = $dbh->prepare("______ ____ product WHERE name = :name AND price=:price");
     $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
     $stmt->bindParam(':price', $_POST['price'], PDO::PARAM_INT);
     $res = $stmt->execute();
@@ -157,15 +184,27 @@ if ($_POST['method'] == 'delete') {
 </html>
 ```
 
+## 画面を確認
+
 以下のような画面になると思います。
 
 ![](../../assets/images/get_db_item_php.png)
+
+送信ボタン、削除ボタンが正常に動作するか確認してください。
 
 !!! warning
 
     エラーが出た場合は、[ログ](../appendix/apach-log.md)を見てください。
 
 これで、Apache、MySQL、PHP の設定が完了しました。
+
+## 確認
+
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
+
+```sh
+$ grech check chapter "end"
+```
 
 ### 以上でチュートリアルは終了です。
 

@@ -27,3 +27,18 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 
 このようにすることで、`mysql`に入ることなく、SQL を実行することができます。
+
+## 問題
+
+Q, 上記のコマンドの`<`はどのような意味でしょうか。
+また、`<`を使わずにコマンドを書くとするとどのようなコマンドになりますか。`|`を使って書いてみてください。
+
+<form action="" method="post">
+<label for="story">回答</label>
+<textarea id="story" name="story"
+          rows="10" style="width: 100%;">
+</textarea>
+<div>
+    <input type="submit" value="送信">
+</div>
+</form>

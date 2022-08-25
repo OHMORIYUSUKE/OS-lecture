@@ -3,7 +3,7 @@
 ## PHP をインストール
 
 ```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo apt install php
+ubuntu@ip-172-31-85-199:/var/www/html$ ____ ___ _______ ___
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -40,7 +40,7 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ```
 
-`apt`コマンドを用いて PHP をインストールする。
+PHP をインストールする。
 
 !!! Question
 
@@ -56,20 +56,20 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
     [動的コンテンツについて](../dynamic-content/index.md)
 
 ```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ php --version
+ubuntu@ip-172-31-85-199:/var/www/html$ php -v
 PHP 8.1.2 (cli) (built: Apr  7 2022 17:46:26) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.2, Copyright (c), by Zend Technologies
 ```
 
-`--version`で PHP がインストールされていることが確認できます。
+`-v`で PHP がインストールされていることが確認できます。
 
 ## PHP のファイルを作成
 
 ```sh
-ubuntu@ip-172-31-85-199:~$ cd ../../var/www/html/
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo vi index.php
+ubuntu@ip-172-31-85-199:~$ __ ______________
+ubuntu@ip-172-31-85-199:/var/www/html$ ____ __ _________
 ```
 
 `/var/www/html`に`index.php`を作成してください。
@@ -149,3 +149,11 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 
     viで書き換えるのが大変だと感じてくると思います。ここで、EC2に存在するファイルを手元のパソコンで編集する方法を紹介します。
     [vscode で開発(付録)](../appendix/remote-ssh.md)
+
+## 確認
+
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
+
+```sh
+$ grech check chapter "php_code_01"
+```

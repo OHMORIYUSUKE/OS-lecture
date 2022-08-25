@@ -23,18 +23,26 @@
 
 ```config title="C:\Users\123456\ .ssh\config"
 Host ec2
-  Hostname 34.201.38.2
-  User ubuntu
-  Port 22
-  IdentityFile C:\Users\123456\Documents\labsuser.pem
+  Hostname __.___.__._
+  User ______
+  Port __
+  IdentityFile _______________________
 ```
 
 上記のように入力する。
 
 - `Hostname`には、EC2 の IP アドレス
-- `User`には、ubuntu を指定
-- `Port`には、22 を指定
-- `IdentityFile`を指定
+- `User`には、xxxxxx を指定
+- `Port`には、xx を指定
+- `IdentityFile`を指定(秘密鍵の場所)
+
+### 確認
+
+```sh
+$ ssh ec2
+```
+
+と入力し、SSH できるか確認してください。
 
 !!! note
 

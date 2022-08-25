@@ -44,22 +44,6 @@ ubuntu@ip-172-31-85-199:/var/www/html$ cat index.html
 
 ### HTML を編集する
 
-#### `index.html`ファイルの中身を削除しましょう。
-
-```sh
-ubuntu@ip-172-31-85-199:/var/www/html$ sudo rm -f index.html && sudo touch index.html
-```
-
-上記のコマンドでは、`sudo rm -f index.html`が成功した後に、`sudo touch index.html`を行っています。
-
-> `sudo`とは superuser do の略である。`root`ユーザーで実行したいときにコマンドの前につける。
-> SSH したときに指定したユーザー(Ubuntu)ではファイルを書き込む権限がないので`root`ユーザーになる必要がある。
-
-!!! info
-
-    ファイルの中身を消去する方法は多々ある。
-    https://qiita.com/nabewata07/items/e67d008a1f10429bb3bf
-
 #### `index.html`に書き込む
 
 !!! info
@@ -99,3 +83,11 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo vi index.html
 !!! note
 
     Apacheではデフォルトで、URL(IPアドレス)でアクセスされた場合は、`index.php`または`index.html`を表示するように設定されている。
+
+## 確認
+
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
+
+```sh
+$ grech check chapter "html"
+```

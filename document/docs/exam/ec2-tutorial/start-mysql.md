@@ -12,7 +12,7 @@
 ### インストール
 
 ```sh
-ubuntu@ip-172-31-85-199:~$ sudo apt install mysql-server
+ubuntu@ip-172-31-85-199:~$ ____ ___ _______ ____________
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -129,42 +129,6 @@ MySQL に接続されていることが確認できます。`mysql>`に SQL を�
 
 ここに、SQL を入力することで、データベースを操作することができます。
 
-### テーブルを確認
-
-```sh
-mysql> SELECT Host, User FROM mysql.user;
-+-----------+------------------+
-| Host      | User             |
-+-----------+------------------+
-| localhost | debian-sys-maint |
-| localhost | mysql.infoschema |
-| localhost | mysql.session    |
-| localhost | mysql.sys        |
-| localhost | root             |
-+-----------+------------------+
-5 rows in set (0.00 sec)
-```
-
-以下の SQL を入力します。
-
-```sql
-SELECT Host, User FROM mysql.user;
-```
-
-`mysql`データベースの`user`テーブルの`Host`,`User`カラムを表示しています。
-
-```sh
-mysql> select current_user(), user();
-+----------------+----------------+
-| current_user() | user()         |
-+----------------+----------------+
-| root@localhost | root@localhost |
-+----------------+----------------+
-1 row in set (0.00 sec)
-```
-
-現在、MySQL の操作を行っているユーザーを表示しています。
-
 !!! note
 
     ちなみに、
@@ -195,3 +159,11 @@ ubuntu@ip-172-31-85-199:/var/log/mysql$
 ```
 
 `mysql>`で`exit`と入力する。これで、mysql のコマンドラインから抜けることができます。
+
+## 確認
+
+すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
+
+```sh
+$ grech check chapter "mysql_dl"
+```
