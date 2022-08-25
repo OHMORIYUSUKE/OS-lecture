@@ -3,7 +3,7 @@
 - [AWS を起動](./ec2-start.md)
 - [AWS コンソール](./console.md)
 - [EC2 にアクセス](./ec2-ssh.md)
-- [Apach をインストール・起動](./apach-start.md)
+- [Apache をインストール・起動](./apach-start.md)
 - [HTML を公開](./public-html.md)
 - [PHP を公開](./public-php.md)
 - [MySQL をインストール・起動](./start-mysql.md)

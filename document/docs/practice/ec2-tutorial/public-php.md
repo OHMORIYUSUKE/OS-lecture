@@ -118,8 +118,8 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 
 !!! warning
 
-    もし正常に動作しない場合は、Apachを再起動してください。
-    [apachの操作方法](./apach-start.md)
+    もし正常に動作しない場合は、Apacheを再起動してください。
+    [apacheの操作方法](./apach-start.md)
 
 ## `Hello World`
 

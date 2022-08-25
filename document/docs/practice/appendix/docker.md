@@ -142,7 +142,7 @@ For more examples and ideas, visit:
 
 上記のようになれば Docker が動作しています。
 
-## docker で Apach を起動
+## docker で Apache を起動
 
 !!! note
 

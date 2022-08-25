@@ -9,7 +9,7 @@
 
     Perl以外ではPythonやRuby, C言語などでプログラムを実行することができる。
 
-## Apach の設定
+## Apache の設定
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo vim /etc/apache2/sites-enabled/000-default.conf

@@ -1,6 +1,6 @@
 # ログを見る
 
-## Apach
+## Apache
 
 `/var/log/apache2`の中の`error.log`に出力されます。
 

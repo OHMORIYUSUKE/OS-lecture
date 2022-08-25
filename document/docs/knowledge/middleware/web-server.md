@@ -2,11 +2,11 @@
 
 Web サーバーとは、パソコンやスマートフォンなどの端末から HTTP/HTTPS で送られたリクエストに対して HTML、CSS、JavaScript などの情報を返す役割を持ったソフトウェアである。
 
-## Apach, Nginx
+## Apache, Nginx
 
 ![](../../assets/images/apache_logo_icon_168630.png){ align=right width="300" }
 
-Apach と Nginx は WEB サーバーとして用いられます。
+Apache と Nginx は WEB サーバーとして用いられます。
 
 > こちらの記事が参考になります。
 > [図解で解説！！　 Apache、Tomcat ってなんなの？](https://qiita.com/tanayasu1228/items/11e22a18dbfa796745b5)

@@ -1,4 +1,4 @@
-# Apach
+# Apache
 
 ## APT
 
@@ -40,7 +40,7 @@ Reading state information... Done
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
 
-## Apach をインストール
+## Apache をインストール
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ ____ ___ _______ _______
@@ -99,7 +99,7 @@ $ grech check chapter "chapter02"
 !!! Question
 
     WEBサーバーについて解説しています。
-    [Apachについて](../middleware/web-server.md)
+    [Apacheについて](../middleware/web-server.md)
 
 ## 動作確認
 

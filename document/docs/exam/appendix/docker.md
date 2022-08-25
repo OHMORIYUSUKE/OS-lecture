@@ -142,11 +142,11 @@ For more examples and ideas, visit:
 
 上記のようになれば Docker が動作しています。
 
-## docker で Apach を起動
+## docker で Apache を起動
 
 !!! note
 
-      「ubuntu/apache2」のDockerイメージを用いてApachを起動します。
+      「ubuntu/apache2」のDockerイメージを用いてApacheを起動します。
       https://hub.docker.com/r/ubuntu/apache2
 
 > Docker hub のページの**Usage**のコマンドそのままです。
@@ -182,7 +182,7 @@ ed3d84c36c5ed599338dde2540db8329b721e40ee2a03bdb2c95ac6975cfa61e
 
 ![](../../assets/images/apach2_docker.png)
 
-上記のような画面が表示されます。Apach2 が動作していることが確認できます。
+上記のような画面が表示されます。Apache2 が動作していることが確認できます。
 
 ### 自分のソースコード(HTML)を表示させる
 

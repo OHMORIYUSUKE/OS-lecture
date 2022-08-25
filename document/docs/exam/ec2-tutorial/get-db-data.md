@@ -165,7 +165,7 @@ if ($_POST['method'] == 'delete') {
 
     エラーが出た場合は、[ログ](../appendix/apach-log.md)を見てください。
 
-これで、Apach、MySQL、PHP の設定が完了しました。
+これで、Apache、MySQL、PHP の設定が完了しました。
 
 ### 以上でチュートリアルは終了です。
 

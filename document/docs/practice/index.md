@@ -4,8 +4,8 @@
 
 ## ステップ 1
 
-- Apach をインストール、起動
-- ブラウザから Apach の起動を確認
+- Apache をインストール、起動
+- ブラウザから Apache の起動を確認
 
 ![](../../assets/images/Apach_defoulte.png)
 
@@ -16,7 +16,7 @@
 
 ## ステップ 2
 
-Apach 上の PHP で`Hello World`を出力する
+Apache 上の PHP で`Hello World`を出力する
 
 ![](../../assets/images/html_hello.png)
 

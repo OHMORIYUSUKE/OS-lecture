@@ -98,4 +98,4 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo vi index.html
 
 !!! note
 
-    Apachではデフォルトで、URL(IPアドレス)でアクセスされた場合は、`index.php`または`index.html`を表示するように設定されている。
+    Apacheではデフォルトで、URL(IPアドレス)でアクセスされた場合は、`index.php`または`index.html`を表示するように設定されている。

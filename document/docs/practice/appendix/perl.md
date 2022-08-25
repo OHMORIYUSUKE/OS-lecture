@@ -1,6 +1,6 @@
 # Perl(CGI)を動かす
 
-## Apach の設定
+## Apache の設定
 
 ```sh
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo vim /etc/apache2/sites-enabled/000-default.conf

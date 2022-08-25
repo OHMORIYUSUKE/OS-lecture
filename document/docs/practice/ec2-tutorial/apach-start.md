@@ -1,4 +1,4 @@
-# Apach
+# Apache
 
 ## APT
 
@@ -40,7 +40,7 @@ Reading state information... Done
     パッケージ管理について解説しています。
     [APT コマンドについて](../linux/packages.md)
 
-## Apach をインストール
+## Apache をインストール
 
 ```sh
 ubuntu@ip-172-31-85-199:~$ sudo apt install apache2
@@ -86,7 +86,7 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ```
 
-`apt`コマンドを用いて Apach をインストールする。
+`apt`コマンドを用いて Apache をインストールする。
 
 !!! Question
 
@@ -123,7 +123,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl stop apache2
 ```
 
-Apach を停止する。
+Apache を停止する。
 
 ### 起動
 
@@ -131,7 +131,7 @@ Apach を停止する。
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl start apache2
 ```
 
-Apach を起動する。
+Apache を起動する。
 
 ### 再起動
 
@@ -139,7 +139,7 @@ Apach を起動する。
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl restart apache2
 ```
 
-Apach を再起動する。
+Apache を再起動する。
 
 ### 設定を読み込み
 
@@ -147,7 +147,7 @@ Apach を再起動する。
 ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl reload apache2
 ```
 
-Apach の設定の変更を反映する。
+Apache の設定の変更を反映する。
 
 ### サーバー起動時に起動を無効
 
@@ -171,5 +171,5 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo systemctl enable apache2
 
 !!! warning
 
-    ブラウザにIPアドレスを入力しても画面が表示されない場合は、Apachが起動していないことが考えられます。
-    Apachを起動しましょう。
+    ブラウザにIPアドレスを入力しても画面が表示されない場合は、Apacheが起動していないことが考えられます。
+    Apacheを起動しましょう。
