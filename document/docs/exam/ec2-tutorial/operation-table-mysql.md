@@ -209,6 +209,49 @@ mysql>  SHOW GRANTS FOR 'webapp'@'localhost';
 
     これで、アプリケーションから攻撃を受けたとしても他のデータベースにアクセスされる可能性や、データベースを消去されるリスクを下げることができました。
 
+## テクニック
+
+簡単に SQL を実行させる方法を紹介します。
+
+`/var/www/html`に`insert_data.sql`と`create_table.sql`を作成してください。
+
+```sql title="create_table.sql"
+DROP TABLE IF EXISTS product;
+______ _____ _______ (____ ____, _____ ___);
+```
+
+```sql title="insert_data.sql"
+______ ____ _______(____, _____) ______ ('_____', ___);
+______ ____ _______(____, _____) ______ ('_____', ___);
+______ ____ _______(____, _____) ______ ('_____', ___);
+```
+
+作成後、以下のコマンドを実行してください。
+
+```sh
+ubuntu@ip-172-31-85-199:/var/www/html$ mysql -uroot -pルートのパスワード -h localhost webapp < create_table.sql
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ubuntu@ip-172-31-85-199:/var/www/html$ mysql -uroot -pルートのパスワード -h localhost webapp < insert_data.sql
+mysql: [Warning] Using a password on the command line interface can be insecure.
+```
+
+このようにすることで、`mysql`に入ることなく、SQL を実行することができます。
+
+## 問題
+
+Q, 上記のコマンドの`<`はどのような意味でしょうか。
+また、`<`を使わずにコマンドを書くとするとどのようなコマンドになりますか。`|`を使って書いてみてください。
+
+<form action="" method="post">
+<label for="story">回答</label>
+<textarea id="story" name="story"
+          rows="10" style="width: 100%;">
+</textarea>
+<div>
+    <input type="submit" value="送信">
+</div>
+</form>
+
 ## 確認
 
 すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。

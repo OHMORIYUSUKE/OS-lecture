@@ -80,6 +80,7 @@ nav:
           - "MySQLを操作(初期設定)": "exam/ec2-tutorial/operation-init-mysql.md"
           - "MySQLを操作(データベース・テーブル)": "exam/ec2-tutorial/operation-table-mysql.md"
           - "PHPからデータベースにアクセス": "exam/ec2-tutorial/get-db-data.md"
+          - "GitHubにソースコードをPush": "exam/ec2-tutorial/github-backup.md"
           - "PHPのコードについて": "exam/ec2-tutorial/php-tutorial.md"
       - "付録":
           - "ホーム": "exam/appendix/index.md"
