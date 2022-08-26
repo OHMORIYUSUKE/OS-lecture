@@ -91,3 +91,5 @@ ubuntu@ip-172-31-85-199:/var/www/html$ sudo vi index.html
 ```sh
 $ grech check chapter "html"
 ```
+
+間違っていたら、該当箇所を確認してください。

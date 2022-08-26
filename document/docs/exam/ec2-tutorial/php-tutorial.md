@@ -196,3 +196,5 @@ $res = $stmt->execute();
 ```sh
 $ grech check chapter "php_code_2"
 ```
+
+間違っていたら、該当箇所を確認してください。

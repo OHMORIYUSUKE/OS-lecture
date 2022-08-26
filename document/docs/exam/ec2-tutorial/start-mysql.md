@@ -166,3 +166,5 @@ ubuntu@ip-172-31-85-199:/var/log/mysql$
 ```sh
 $ grech check chapter "mysql_dl"
 ```
+
+間違っていたら、該当箇所を確認してください。

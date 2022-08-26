@@ -152,3 +152,5 @@ mysql>
 ```sh
 $ grech check chapter "mysql_init"
 ```
+
+間違っていたら、該当箇所を確認してください。

@@ -232,3 +232,5 @@ ubuntu@ip-172-31-85-199:~$ systemctl status apache2
 ```sh
 $ grech check chapter "apache"
 ```
+
+間違っていたら、該当箇所を確認してください。

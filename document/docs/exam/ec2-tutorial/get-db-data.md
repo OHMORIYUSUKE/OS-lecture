@@ -203,5 +203,7 @@ if ($_POST['method'] == 'delete') {
 すべての穴埋めを行い、コマンドの実行が完了したら、以下のコマンドを実行してください。
 
 ```sh
-$ grech check chapter "end"
+$ grech check chapter "get-db-data"
 ```
+
+間違っていたら、該当箇所を確認してください。

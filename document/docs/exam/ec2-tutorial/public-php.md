@@ -157,3 +157,5 @@ ip アドレスの後ろに`/index.php`を入力する。(http://{ip address}/in
 ```sh
 $ grech check chapter "php_code_01"
 ```
+
+間違っていたら、該当箇所を確認してください。
