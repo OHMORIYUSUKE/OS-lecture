@@ -205,20 +205,3 @@ if ($_POST['method'] == 'delete') {
 ```sh
 $ grech check chapter "end"
 ```
-
-### 以上でチュートリアルは終了です。
-
-[このコードの解説はこちらです](./php-tutorial.md)
-
----
-
-## 付録
-
-PHP 以外にも Python や Perl での解説もあります。
-
-### Python , Perl (CGI)
-
-データベースに接続までは解説しませんが、Python, Perl(CGI)での解説もあります。
-
-[Python(CGI)](../appendix/python.md)
-[Perl(CGI)](../appendix/perl.md)
